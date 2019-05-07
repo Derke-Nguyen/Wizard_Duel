@@ -29,6 +29,8 @@ if(menu_committed != -1){
 	switch(menu_committed){
 		case 0: game_end();
 		break;
+		case 2: room_goto(rms_game);
+		break;
 	}
 }
 	
