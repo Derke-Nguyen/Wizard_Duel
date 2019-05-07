@@ -1,7 +1,9 @@
-grav = 0.7;
-hsp = 0;
-vsp = 0;
-jumpspeed = 10;
-movespeed = 10;
-player2Health = 5;
-mana = 10;
+/// @description Insert description here
+// You can write your code in this editor
+
+// Inherit the parent event
+event_inherited();
+
+LEFT_KEY = vk_left;
+RIGHT_KEY = vk_right;
+JUMP_KEY = vk_up;
