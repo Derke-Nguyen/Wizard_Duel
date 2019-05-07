@@ -1,6 +1,6 @@
-key_right = keyboard_check(ord("D"));
-key_left = -keyboard_check(ord("A"));
-key_jump = keyboard_check_pressed(ord("W")); //inputs
+key_right = keyboard_check(RIGHT_KEY);
+key_left = -keyboard_check(LEFT_KEY);
+key_jump = keyboard_check_pressed(JUMP_KEY); //inputs
 
 move = key_left + key_right;
 hsp = move*movespeed;
