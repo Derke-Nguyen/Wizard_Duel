@@ -1,0 +1,1 @@
+room_goto(rms_main_screen);

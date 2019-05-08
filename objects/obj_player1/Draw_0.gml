@@ -1,3 +1,3 @@
 draw_self();
-draw_text(30, 300, floor(mana));
-draw_text(30, 265, playerHealth);
+draw_text(40, 300, floor(mana));
+draw_text(40, 265, playerHealth);
