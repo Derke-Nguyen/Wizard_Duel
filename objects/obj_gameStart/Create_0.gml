@@ -1,12 +1,11 @@
 /// @description siwei's player spawn
 
+//CREATES PLATFORMS
 instance_create_depth(64, 80, 0, obj_platform);
 instance_create_depth(320, 80, 0, obj_platform);
 instance_create_depth(192, 165, 0, obj_platform);
-instance_create_depth(384, 240, 0, obj_platform);
-instance_create_depth(0, 240, 0, obj_platform); //creates all platforms
 
-instance_create_depth(0, 320, 0, obj_floor);
+instance_create_depth(0, 240, 0, obj_floor);
 
 if(random(1) > 0.667){
 	instance_create_depth(100, 90, 0, obj_player1);
