@@ -49,4 +49,6 @@ y += vsp;
 x = clamp(x, 0, room_width);
 y = clamp(y, 0, room_height); //keeps player in room
 
-mana += 1/room_speed;
+if(mana <= 10){
+	mana += 1/room_speed;
+}
