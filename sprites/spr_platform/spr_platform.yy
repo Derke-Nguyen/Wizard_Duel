@@ -6,44 +6,44 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 95,
+    "bbox_bottom": 3,
     "bbox_left": 0,
     "bbox_right": 95,
-    "bbox_top": 91,
+    "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "7b43fe57-dd79-4bae-adf1-e33165168923",
+            "id": "e93b2020-2c08-4ac8-b53b-9684a973d936",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "4bb7a8e2-14c4-4619-a07c-e90d1b6116dc",
             "compositeImage": {
-                "id": "66d61c0e-e367-4c27-abc9-baf18d4fd7bc",
+                "id": "f320ce67-b8d6-4f80-bec6-e116f4d94b37",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "7b43fe57-dd79-4bae-adf1-e33165168923",
+                "FrameId": "e93b2020-2c08-4ac8-b53b-9684a973d936",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "eca07714-ddb0-49a2-bf50-f7abbce3fd76",
+                    "id": "fda77825-1c67-478c-80ca-8d96a2f742e1",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "7b43fe57-dd79-4bae-adf1-e33165168923",
-                    "LayerId": "96b9532d-6ba2-4f04-96c9-6221062e60e1"
+                    "FrameId": "e93b2020-2c08-4ac8-b53b-9684a973d936",
+                    "LayerId": "26d9f725-9767-4dfc-8acd-80dd73d9540b"
                 }
             ]
         }
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 96,
+    "height": 4,
     "layers": [
         {
-            "id": "96b9532d-6ba2-4f04-96c9-6221062e60e1",
+            "id": "26d9f725-9767-4dfc-8acd-80dd73d9540b",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "4bb7a8e2-14c4-4619-a07c-e90d1b6116dc",
@@ -66,5 +66,5 @@
     "type": 0,
     "width": 96,
     "xorig": 0,
-    "yorig": 95
+    "yorig": 3
 }

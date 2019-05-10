@@ -7,7 +7,8 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "cffe218a-49ed-4b5c-89e0-8621c9522925"
+        "cffe218a-49ed-4b5c-89e0-8621c9522925",
+        "be5453df-f677-4363-b60d-093021ae82e1"
     ],
     "IsDnD": false,
     "layers": [
@@ -25,7 +26,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_4DE390CD","id": "cffe218a-49ed-4b5c-89e0-8621c9522925","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 0,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4DE390CD","objId": "0cc6b860-03fa-4dc3-9ff8-964b66272fd7","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 64,"y": 256}
+{"name": "inst_4DE390CD","id": "cffe218a-49ed-4b5c-89e0-8621c9522925","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 0,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4DE390CD","objId": "0cc6b860-03fa-4dc3-9ff8-964b66272fd7","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 64,"y": 256},
+{"name": "inst_7C3C89A9","id": "be5453df-f677-4363-b60d-093021ae82e1","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7C3C89A9","objId": "76a2ebd4-db0f-46f2-bbb1-33ca7c4bcffb","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 0,"y": 320}
             ],
             "layers": [
 
@@ -50,7 +52,7 @@
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "hspeed": 0,
-            "htiled": true,
+            "htiled": false,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
@@ -68,7 +70,7 @@
             "userdefined_depth": false,
             "visible": true,
             "vspeed": 0,
-            "vtiled": true,
+            "vtiled": false,
             "x": 0,
             "y": 0
         }
