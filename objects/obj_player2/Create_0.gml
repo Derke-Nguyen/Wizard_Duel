@@ -7,3 +7,6 @@ event_inherited();
 LEFT_KEY = vk_left;
 RIGHT_KEY = vk_right;
 JUMP_KEY = vk_up;
+BULLET_KEY = ord("I");
+
+player_id = 2;
