@@ -18,6 +18,11 @@ var bullet_id = instance_create_depth(x_pos, y_pos, 0, obj_bullet);
 bullet_id.hspeed = hsp;
 bullet_id.player_id = player_id;
 
+// If moving left, flip the sprite
+if hsp < 0 {
+    bullet_id.image_xscale = -1;
+}
+
 switch player_id {
     case 1:
         bullet_id.sprite_index = spr_fireball;
