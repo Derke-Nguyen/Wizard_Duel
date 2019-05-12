@@ -6,6 +6,11 @@ movespeed = 10;
 playerHealth = 5;
 mana = 10;
 
+enum FacingDirection {
+    Left,
+    Right,
+}
+facing = FacingDirection.Left;
 // ID for which player is which
 // Used to track who fired what projectiles.
 player_id = 0; // Set by each player subobject

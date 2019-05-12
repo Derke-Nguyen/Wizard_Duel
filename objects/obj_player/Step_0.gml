@@ -1,12 +1,30 @@
 // Inputs
 key_right = keyboard_check(RIGHT_KEY);
-key_left = -keyboard_check(LEFT_KEY);
+key_left = keyboard_check(LEFT_KEY);
 key_jump = keyboard_check_pressed(JUMP_KEY);
 key_bullet = keyboard_check_pressed(BULLET_KEY);
 
-// Horizontal speed set by movement
-move = key_left + key_right;
-hsp = move*movespeed;
+// Player controlled movement
+if key_left and not key_right {
+    hsp = -movespeed;
+    facing = FacingDirection.Left;
+} else if not key_left and key_right {
+    hsp = movespeed;
+    facing = FacingDirection.Right;
+} else {
+    hsp = 0;
+}
+
+// Sprite flipping
+switch facing {
+    case FacingDirection.Left:
+        image_xscale = -1;
+        break;
+    case FacingDirection.Right:
+        image_xscale = 1;
+        break;
+}
+
 
 // Gravity
 if(vsp < 10){
@@ -28,13 +46,14 @@ if(mana <= 10){
 // We will probably want to given that each person has multiple abilities
 // The bullet spawns vertically centered on the sprite
 // and to the left or right side of it.
-var SPRITE_V_CENTER = y + sprite_height / 2;
-var SPRITE_LEFT = x;
-var SPRITE_RIGHT = x + sprite_width;
-
+var SPRITE_V_CENTER = y;
+// Do abs() on sprite_width because sprite_width will be negative if
+// if image_xscale is negative (which is annoying)
+var SPRITE_LEFT = x - abs(sprite_width) / 2.0;
+var SPRITE_RIGHT = x + abs(sprite_width) / 2.0;
 if key_bullet and mana >= 1{
     // Moving left
-	if (move <= 0) {
+	if facing == FacingDirection.Left {
         spawn_bullet(player_id, SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
 	}
     // Moving right

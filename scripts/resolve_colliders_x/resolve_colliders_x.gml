@@ -1,5 +1,7 @@
 /// resolve_colliders_x(sprite, hsp, colliders_list)
-//	Resolves the x axis collision with the colliders. ASSUMES ORIGIN IS TOP LEFT OF SPRITE.
+//	Resolves the y axis collision with the colliders.
+//  Note that the origin of the sprite is assumed to be the center of the sprite
+//  and the origin of the collider is assumed to be the top left of the collider.
 //		sprite		- The sprite to resolve. Uses the bounding box of the sprite
 //		hsp			- Horizontal speed of the sprite
 //		colliders_list  - The walls the sprite is touching
@@ -15,23 +17,24 @@ var colliders_list = argument2;
 // Needed to avoid weird roundoff error
 var COLLISION_TOLERANCE = 1;
 
+// Note that all the bbox_ variables are ints, so we can't use them directly
+// to get position, (.x and .y are real numbers!). Fortunately, masks dimension are
+// always in pixels, so they should be ints.
+var mask_width = sprite.bbox_right - sprite.bbox_left;
+
 for (var i = 0; i < ds_list_size(colliders_list); i++) {
 	var collider = colliders_list[| i];
 	if place_meeting(sprite.x, sprite.y + x_disp, collider) {
 		if hsp > 0 {
             // Sprite is moving to the right, so push it out to the left
 			var collider_left = collider.x;
-            // Note that all the bbox_ variables are ints, so we can't use them directly
-            // to get position, (.x and .y are real numbers!). Fortunately, masks dimension are
-            // always in pixels, so they should be ints.
-			var mask_width = sprite.bbox_right - sprite.bbox_left;
-			var sprite_right = sprite.x + mask_width;
+			var sprite_right = sprite.x + mask_width / 2.0;
 			x_disp += collider_left - sprite_right - COLLISION_TOLERANCE;
 		} else {
             // Sprite is moving to the left, so push it out to the right
 			var collider_width = collider.bbox_right - collider.bbox_left;
 			var collider_right = collider.x + collider_width;
-			var sprite_left = sprite.x;
+			var sprite_left = sprite.x - mask_width / 2.0;
 			x_disp += collider_right - sprite_left + COLLISION_TOLERANCE;
 		}
         // We hit a wall, so reset our hsp to zero.
