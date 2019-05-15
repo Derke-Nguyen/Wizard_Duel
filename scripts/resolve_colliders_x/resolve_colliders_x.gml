@@ -2,6 +2,8 @@
 //	Resolves the y axis collision with the colliders.
 //  Note that the origin of the sprite is assumed to be the center of the sprite
 //  and the origin of the collider is assumed to be the top left of the collider.
+//  Also assumes that the sprite_width of the collider is equal to the actual size of the mask
+//  If you draw the sprite using draw_ext or modify image_xscale this might not be true.
 //		sprite		- The sprite to resolve. Uses the bounding box of the sprite
 //		hsp			- Horizontal speed of the sprite
 //		colliders_list  - The walls the sprite is touching
@@ -17,10 +19,11 @@ var colliders_list = argument2;
 // Needed to avoid weird roundoff error
 var COLLISION_TOLERANCE = 1;
 
-// Note that all the bbox_ variables are ints, so we can't use them directly
-// to get position, (.x and .y are real numbers!). Fortunately, masks dimension are
-// always in pixels, so they should be ints.
-var mask_width = sprite.bbox_right - sprite.bbox_left;
+// Note that this assumes that sprite.sprite_width is actually the width of the
+// sprite's collision mask. This might not be true if sprite.image_xscale isn't
+// 1 or -1 (because sprite_width is influcenced by that value) or if we use draw_ext
+// to draw sprites manually.
+var mask_width = abs(sprite.sprite_width);
 
 for (var i = 0; i < ds_list_size(colliders_list); i++) {
 	var collider = colliders_list[| i];
@@ -32,7 +35,7 @@ for (var i = 0; i < ds_list_size(colliders_list); i++) {
 			x_disp += collider_left - sprite_right - COLLISION_TOLERANCE;
 		} else {
             // Sprite is moving to the left, so push it out to the right
-			var collider_width = collider.bbox_right - collider.bbox_left;
+			var collider_width = abs(collider.sprite_width);
 			var collider_right = collider.x + collider_width;
 			var sprite_left = sprite.x - mask_width / 2.0;
 			x_disp += collider_right - sprite_left + COLLISION_TOLERANCE;
