@@ -7,6 +7,9 @@ instance_create_depth(192, 165, 0, obj_platform);
 instance_create_depth(64, 240, 0, obj_platform);
 instance_create_depth(320, 240, 0, obj_platform);
 
+//CREATES FLOOR
+instance_create_depth(0, 360 - 70, 0, obj_floor);
+
 if(random(1) > 0.667){
 	instance_create_depth(100, 90, 0, obj_player1);
 }

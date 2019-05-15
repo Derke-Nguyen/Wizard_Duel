@@ -1,7 +1,7 @@
 grav = 0.7;
 hsp = 0;
 vsp = 0;
-jumpspeed = 10;
+jumpspeed = 11;
 movespeed = 10;
 playerHealth = 5;
 mana = 10;

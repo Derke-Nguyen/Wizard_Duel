@@ -97,3 +97,5 @@ hsp = resolve[1];
 
 // Destroy the list to avoid leaking memory.
 ds_list_destroy(colliders_list);
+
+x = clamp(x, 0, 480);
