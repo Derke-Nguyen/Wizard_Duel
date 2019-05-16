@@ -7,6 +7,7 @@ event_inherited();
 LEFT_KEY = ord("A");
 RIGHT_KEY = ord("D");
 JUMP_KEY = ord("W");
+FAST_FALL_KEY = ord("S");
 BULLET_KEY = ord("R");
 
 player_id = 1;

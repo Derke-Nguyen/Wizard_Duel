@@ -8,7 +8,7 @@ for(var i = 0; i< menu_items; ++i){
 	var offset = 2;
 	var txt = menu[i];
 	if(menu_cursor == i){
-		txt = string_insert(") ", txt, 0);
+		txt = string_insert("> ", txt, 0);
 		var col = c_white;
 	}
 	else{
