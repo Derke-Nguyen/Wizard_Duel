@@ -2,6 +2,7 @@
 key_right = keyboard_check(RIGHT_KEY);
 key_left = keyboard_check(LEFT_KEY);
 key_jump = keyboard_check_pressed(JUMP_KEY);
+key_fast_fall = keyboard_check(FAST_FALL_KEY);
 key_bullet = keyboard_check_pressed(BULLET_KEY);
 
 // Player controlled movement
@@ -27,13 +28,40 @@ switch facing {
 
 
 // Gravity
-if(vsp < 10){
+if vsp < 10 {
 	vsp += grav;
 }
 
-// Jumping
+// Fast Fall
+if key_fast_fall {
+	if vsp < 0 {
+		vsp = fast_fall_speed;
+	} else {
+		vsp += fast_fall_speed;
+	}
+}
+
+// Landing on Ground
 if(place_meeting(x, y + 1, obj_floor) || place_meeting(x, y + 1, obj_platform)){
-	vsp = key_jump * -jumpspeed;
+	jumps = 2;
+	vsp = 0;
+}
+
+if key_jump {
+	switch jumps {
+		case 1:
+			// Take the absolutely larger value of jumping with no prior velocity
+			// and jumping with current velocity. This is done so that the second 
+			// jump always "feels" like a jump.
+			vsp = min(-second_jump_power, vsp - second_jump_power);
+			break;
+		case 2:
+			vsp = min(-first_jump_power, vsp - first_jump_power);
+			break;
+		default:
+			// lmao nothing
+	}
+	jumps = max(jumps - 1, 0);
 }
 
 // Mana Regen
@@ -61,6 +89,18 @@ if key_bullet and mana >= 1{
 		spawn_bullet(player_id, SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
 	}
     mana--;
+}
+
+// Invincibility Stuff
+if iframe > 0 {
+	iframe--;
+}
+// Flicker while in invicibility frames
+image_alpha = (iframe % 2) ? 0.5 : 1;
+
+// Game end transition
+if playerHealth <= 0 {
+	gameover_transition(player_id);
 }
 
 // COLLISION CODE
@@ -98,4 +138,4 @@ hsp = resolve[1];
 // Destroy the list to avoid leaking memory.
 ds_list_destroy(colliders_list);
 
-x = clamp(x, 0, 480);
+x = clamp(x, 0, room_width);

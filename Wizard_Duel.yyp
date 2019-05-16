@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "048cb3b5-5548-4958-ab0f-ba1b981c13c7",
+            "Value": {
+                "id": "744e38a3-3a99-4b7b-9545-961e99c9ff92",
+                "resourcePath": "scripts\\gameover_transition\\gameover_transition.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "070b2218-1c55-4d59-aaae-d1c0c1d4ff70",
             "Value": {
                 "id": "f083e5de-7a91-4c9a-9bea-5adfdfff6937",
@@ -95,6 +103,14 @@
             }
         },
         {
+            "Key": "20ee3b90-d3d1-470a-8393-9c2e7b8599fd",
+            "Value": {
+                "id": "b7c0d339-a470-4240-b9a3-b8fa51c95f72",
+                "resourcePath": "sprites\\spr_gameover\\spr_gameover.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "22c6757f-dc56-4847-b39d-b60fbc4c5481",
             "Value": {
                 "id": "d96eaa5d-6e23-4c3e-96d9-730a197e4bcf",
@@ -131,6 +147,14 @@
             "Value": {
                 "id": "6dcd9567-2c58-4762-9b0d-7c1e36e13ec7",
                 "resourcePath": "objects\\obj_reset\\obj_reset.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "409eca17-72dc-47e5-9563-a47a324793f2",
+            "Value": {
+                "id": "8a8c5ac8-04e5-4df1-9a3a-3e7ee8ddee3d",
+                "resourcePath": "objects\\obj_gameover\\obj_gameover.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -244,6 +268,14 @@
                 "id": "097ebef5-a7ed-4181-b2bb-8c4d608afd35",
                 "resourcePath": "sprites\\spr_arrow\\spr_arrow.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a4384ea3-d6d2-4bd8-a4f3-728d6b4fb712",
+            "Value": {
+                "id": "2dc604bf-e342-4a4b-a36b-5af7ab0ac0ed",
+                "resourcePath": "rooms\\rms_gameover\\rms_gameover.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -370,7 +402,8 @@
     "script_order": [
         "18e58aca-ddcf-4472-bd2a-65b83114e87b",
         "cf8d6a80-670d-41c0-9d56-e613d5828eee",
-        "7a075e4d-dff0-4959-8b7c-267e8f99b47a"
+        "7a075e4d-dff0-4959-8b7c-267e8f99b47a",
+        "048cb3b5-5548-4958-ab0f-ba1b981c13c7"
     ],
     "tutorial": ""
 }
