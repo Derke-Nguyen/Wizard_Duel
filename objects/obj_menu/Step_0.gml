@@ -1,6 +1,6 @@
 /// @description control menu
 
-menu_x += (menu_x_target - menu_x) /menu_speed;
+menu_y += (menu_y_target - menu_y) /menu_speed;
 
 //keyboard controls
 
@@ -18,7 +18,7 @@ if(menu_control){
 		}
 	}
 	if(keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)){
-		menu_x_target = gui_width + 400;
+		menu_y_target = gui_width + 400;
 		menu_committed = menu_cursor;
 		//ScreenShake(4,30);
 		menu_control = false;
