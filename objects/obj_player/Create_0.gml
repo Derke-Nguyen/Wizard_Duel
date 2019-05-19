@@ -9,7 +9,7 @@ movespeed = 10;
 hsp = 0;
 vsp = 0;
 jumps = 2;
-playerHealth = 5;
+playerHealth = 10;
 mana = 10;
 iframe = 0;
 
