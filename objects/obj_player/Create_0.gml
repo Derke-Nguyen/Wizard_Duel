@@ -4,6 +4,8 @@ fast_fall_speed = 5;
 first_jump_power = 11;
 second_jump_power = 7;
 movespeed = 10;
+max_health = 10;
+max_mana = 10;
 
 // actual variables
 hsp = 0;
