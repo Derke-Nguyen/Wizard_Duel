@@ -24,6 +24,7 @@ else if(random(1) > 0.334){
 else{
 	instance_create_depth(margin_x, margin_y + 264, 0, obj_player1);
 }
+//instance_create_depth(24,320, 0, obj_healthbar_p1);
 
 //PLAYER 2 SPAWN
 if(random(1) > 0.667){
@@ -35,3 +36,4 @@ else if(random(1) > 0.334){
 else{
 	instance_create_depth(640-margin_x, margin_y + 264, 0, obj_player2);
 } 
+//instance_create_depth(616,320, 0, obj_healthbar_p2);
