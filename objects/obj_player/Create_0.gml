@@ -32,4 +32,11 @@ LEFT_KEY = vk_left;
 RIGHT_KEY = vk_right;
 JUMP_KEY = vk_up;
 FAST_FALL_KEY = vk_down;
-BULLET_KEY = ord("I");
+SPELL1_KEY = ord("I");
+SPELL2_KEY = ord("O");
+SPELL3_KEY = ord("P");
+
+//SPELL COSTS
+spell1cost = 1;
+spell2cost = 3;
+spell3cost = 5;
