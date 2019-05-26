@@ -3,7 +3,9 @@ key_right = keyboard_check(RIGHT_KEY);
 key_left = keyboard_check(LEFT_KEY);
 key_jump = keyboard_check_pressed(JUMP_KEY);
 key_fast_fall = keyboard_check(FAST_FALL_KEY);
-key_bullet = keyboard_check_pressed(BULLET_KEY);
+key_spell1 = keyboard_check_pressed(SPELL1_KEY);
+key_spell2 = keyboard_check_pressed(SPELL2_KEY);
+key_spell3 = keyboard_check_pressed(SPELL3_KEY);
 
 // Player controlled movement
 if key_left and not key_right {
@@ -79,16 +81,41 @@ var SPRITE_V_CENTER = y;
 // if image_xscale is negative (which is annoying)
 var SPRITE_LEFT = x - abs(sprite_width) / 2.0;
 var SPRITE_RIGHT = x + abs(sprite_width) / 2.0;
-if key_bullet and mana >= 1{
+if key_spell1 and mana >= spell1cost{
     // Moving left
 	if facing == FacingDirection.Left {
-        spawn_bullet(player_id, SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
+        spawn_spell1(player_id, SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
 	}
     // Moving right
 	else {
-		spawn_bullet(player_id, SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
+		spawn_spell1(player_id, SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
 	}
-    mana--;
+    mana -= spell1cost;
+}
+
+//SPELL 2
+if key_spell2 and mana >= spell2cost{
+	// Moving left
+	if facing == FacingDirection.Left {
+        spawn_spell2(player_id, SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
+	}
+    // Moving right
+	else {
+		spawn_spell2(player_id, SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
+	}
+    mana -= spell2cost;
+}
+//SPELL 3
+if key_spell3 and mana >= spell3cost{
+	// Moving left
+	if facing == FacingDirection.Left {
+        spawn_spell3(player_id, SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
+	}
+    // Moving right
+	else {
+		spawn_spell3(player_id, SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
+	}
+    mana -= spell3cost;
 }
 
 // Invincibility Stuff

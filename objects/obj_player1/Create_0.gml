@@ -8,6 +8,8 @@ LEFT_KEY = ord("A");
 RIGHT_KEY = ord("D");
 JUMP_KEY = ord("W");
 FAST_FALL_KEY = ord("S");
-BULLET_KEY = ord("R");
+SPELL1_KEY = ord("R");
+SPELL2_KEY = ord("T");
+SPELL3_KEY = ord("Y");
 
 player_id = 1;
