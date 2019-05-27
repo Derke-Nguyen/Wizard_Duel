@@ -122,7 +122,7 @@
             "Key": "20ee3b90-d3d1-470a-8393-9c2e7b8599fd",
             "Value": {
                 "id": "b7c0d339-a470-4240-b9a3-b8fa51c95f72",
-                "resourcePath": "sprites\\spr_gameover\\spr_gameover.yy",
+                "resourcePath": "sprites\\spr_scr_gameover\\spr_scr_gameover.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -250,7 +250,7 @@
             "Key": "7498eae7-e0bf-4c57-aa33-a8260b659870",
             "Value": {
                 "id": "d9434bf3-41d7-4daf-9430-a89be5bece21",
-                "resourcePath": "sprites\\spr_titlescreen\\spr_titlescreen.yy",
+                "resourcePath": "sprites\\spr_scr_title\\spr_scr_title.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -268,6 +268,14 @@
                 "id": "9e0878bd-fcd2-4c90-a68b-a20e1757d474",
                 "resourcePath": "objects\\obj_floor\\obj_floor.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "782dc4a3-3de0-4c45-92a3-2ed7f3d871a8",
+            "Value": {
+                "id": "c44ff966-51b9-4cdc-8abb-207eceb711ae",
+                "resourcePath": "sprites\\spr_scr_settings\\spr_scr_settings.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -431,6 +439,22 @@
             }
         },
         {
+            "Key": "c41f1a00-27fe-48ca-b1e9-1449f8e10739",
+            "Value": {
+                "id": "de22ca98-1933-473e-9efe-4c796f286da0",
+                "resourcePath": "rooms\\rms_settings\\rms_settings.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "c9da334a-003f-49af-9019-802465d400d5",
+            "Value": {
+                "id": "11b209f6-0042-43bc-9574-6f673691dbb3",
+                "resourcePath": "objects\\obj_settings\\obj_settings.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "121b992c-31c9-499a-b76a-ecb7727a85ca",
@@ -498,8 +522,8 @@
     "script_order": [
         "18e58aca-ddcf-4472-bd2a-65b83114e87b",
         "cf8d6a80-670d-41c0-9d56-e613d5828eee",
-        "7a075e4d-dff0-4959-8b7c-267e8f99b47a",
         "048cb3b5-5548-4958-ab0f-ba1b981c13c7",
+        "7a075e4d-dff0-4959-8b7c-267e8f99b47a",
         "fb58a142-0265-4385-b1c9-4e2215fdc604",
         "3b413960-43c4-4378-92f9-4a19505ab17b"
     ],
