@@ -9,11 +9,12 @@
 // RETURNS - the id of the bullet (probably an int)
 
 var player_id = argument0;
-var x_pos = argument1;
-var y_pos = argument2;
-var hsp = argument3;
+var character_id = argument1;
+var x_pos = argument2;
+var y_pos = argument3;
+var hsp = argument4;
 
-switch player_id{
+switch character_id{
 	//red wizard
 	case 1: //LAZOR
 

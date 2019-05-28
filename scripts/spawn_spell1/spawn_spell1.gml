@@ -9,9 +9,10 @@
 // RETURNS - the id of the bullet (probably an int)
 
 var player_id = argument0;
-var x_pos = argument1;
-var y_pos = argument2;
-var hsp = argument3;
+var character_id = argument1;
+var x_pos = argument2;
+var y_pos = argument3;
+var hsp = argument4;
 
 var bullet_id = instance_create_depth(x_pos, y_pos, 0, obj_spell1);
 
@@ -23,7 +24,7 @@ if hsp < 0 {
     bullet_id.image_xscale = -1;
 }
 
-switch player_id {
+switch character_id {
     case 1:
         bullet_id.sprite_index = spr_fireball;
         break;
