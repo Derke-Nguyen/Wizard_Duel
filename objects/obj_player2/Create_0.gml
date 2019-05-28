@@ -23,6 +23,16 @@ if(usingcontroller){
 	SPELL3_KEY = gp_face2;
 }
 
-
-
 player_id = 2;
+character_id = player2character;
+character_id = player2character;
+switch(character_id){
+	case 1: sprite_index = spr_red;
+	break;
+	case 2: sprite_index = spr_blue;
+	break;
+	case 3: sprite_index = spr_purple;
+	break;
+	case 4: sprite_index = spr_orange;
+	break;
+};

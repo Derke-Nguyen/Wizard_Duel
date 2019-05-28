@@ -95,11 +95,11 @@ var SPRITE_RIGHT = x + abs(sprite_width) / 2.0;
 if key_spell1 and mana >= spell1cost{
     // Moving left
 	if facing == FacingDirection.Left {
-        spawn_spell1(player_id, SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
+        spawn_spell1(player_id,character_id, SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
 	}
     // Moving right
 	else {
-		spawn_spell1(player_id, SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
+		spawn_spell1(player_id,character_id, SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
 	}
     mana -= spell1cost;
 }
@@ -108,11 +108,11 @@ if key_spell1 and mana >= spell1cost{
 if key_spell2 and mana >= spell2cost{
 	// Moving left
 	if facing == FacingDirection.Left {
-        spawn_spell2(player_id, SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
+        spawn_spell2(player_id,character_id, SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
 	}
     // Moving right
 	else {
-		spawn_spell2(player_id, SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
+		spawn_spell2(player_id,character_id, SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
 	}
     mana -= spell2cost;
 }
@@ -120,11 +120,11 @@ if key_spell2 and mana >= spell2cost{
 if key_spell3 and mana >= spell3cost{
 	// Moving left
 	if facing == FacingDirection.Left {
-        spawn_spell3(player_id, SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
+        spawn_spell3(player_id, character_id,SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
 	}
     // Moving right
 	else {
-		spawn_spell3(player_id, SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
+		spawn_spell3(player_id, character_id,SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
 	}
     mana -= spell3cost;
 }

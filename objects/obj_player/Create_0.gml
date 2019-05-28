@@ -10,6 +10,9 @@ max_mana = 10;
 //CONTROLLER
 usingcontroller = false;
 
+//CHARACTER
+character_id = 1;
+
 // actual variables
 hsp = 0;
 vsp = 0;

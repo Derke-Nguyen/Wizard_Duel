@@ -37,7 +37,9 @@ if(menu_committed != -1){
 		break;
 		case 1: room_goto(rms_settings);
 		break;
-		case 2: room_goto(rms_game);
+		case 2: room_goto(rms_help);
+		break;
+		case 3: room_goto(rms_game);
 		break;
 	}
 }

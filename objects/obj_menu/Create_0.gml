@@ -16,12 +16,13 @@ menu_item_height = font_get_size(fMenu);
 menu_committed = -1;
 menu_control = true;
 
-menu[2] = "Start Game";
+menu[3] = "Start Game";
+menu[2] = "Help"
 menu[1] = "Settings";
 menu[0] = "Quit";
 
 menu_items = array_length_1d(menu);
-menu_cursor = 2;
+menu_cursor = 3;
 
 up[0] = vk_up;
 up[1] = ord("W");
@@ -29,6 +30,3 @@ up[1] = ord("W");
 down[0] = vk_down;
 down[1] = ord("S");
 
-//player 2 controller
-globalvar player2controller;
-player2controller = false;

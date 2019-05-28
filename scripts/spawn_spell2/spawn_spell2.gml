@@ -9,11 +9,12 @@
 // RETURNS - the id of the bullet (probably an int)
 
 var player_id = argument0;
-var x_pos = argument1;
-var y_pos = argument2;
-var hsp = argument3;
+var character_id = argument1;
+var x_pos = argument2;
+var y_pos = argument3;
+var hsp = argument4;
 
-switch player_id{
+switch character_id{
 	//red wizard
 	case 1: //exploady fireball thingy
 
@@ -23,6 +24,9 @@ switch player_id{
 		var shield_id = instance_create_depth(x_pos, y_pos, 0, obj_shield);
 		shield_id.hspeed = 0;
 		shield_id.player_id = player_id;
+		if(hsp <0){
+			shield_id.image_xscale = -1;
+		}
 	break;
 	
 }

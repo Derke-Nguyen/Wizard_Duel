@@ -13,3 +13,15 @@ SPELL2_KEY = ord("T");
 SPELL3_KEY = ord("Y");
 
 player_id = 1;
+
+character_id = player1character;
+switch(character_id){
+	case 1: sprite_index = spr_red;
+	break;
+	case 2: sprite_index = spr_blue;
+	break;
+	case 3: sprite_index = spr_purple;
+	break;
+	case 4: sprite_index = spr_orange;
+	break;
+};
