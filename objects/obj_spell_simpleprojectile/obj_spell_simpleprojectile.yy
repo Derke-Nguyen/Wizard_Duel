@@ -2,7 +2,7 @@
     "id": "50c1fe87-a98f-4381-bc19-d00cb86ab884",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_spell1",
+    "name": "obj_spell_simpleprojectile",
     "eventList": [
         {
             "id": "03df0ce9-d95a-4611-af36-51ded47fea57",
@@ -27,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "9d321b77-40f8-4ccd-9e55-5006b168729d",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

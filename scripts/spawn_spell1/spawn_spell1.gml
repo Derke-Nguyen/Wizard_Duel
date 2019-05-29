@@ -1,12 +1,17 @@
-/// spawn_spell1(player_id, x_pos, y_pos, hsp)
+/// spawn_spell1(player_id, character_id, x_pos, y_pos, hsp)
 // Returns the id of a spell object with the appropriate values
 // player_id - an integer corresponding to the player number.
 //                   This is probably 1, 2, 3, 4 for player 1, player 2, etc
-// x_pos - x position to spawn bullet
-// y_pos - y position to spawn bullet
-// hsp - the bullet's horizontal speed to spawn with
-// TODO: Allow for non horizontal bullet movement?
-// RETURNS - the id of the bullet (probably an int)
+// character_id - an integer corresponding to the character number.
+//					 1 - red wizard - fires a straight projectile
+//                   2 - blue wizard - fires a straight projectile
+//                   3 - purple wizard
+//                   4 - orange wizard
+// x_pos - x position to spawn spell
+// y_pos - y position to spawn spell
+// hsp - the spell's horizontal speed to spawn with
+// TODO: Allow for non horizontal spell movement?
+// RETURNS - the id of the spell (probably an int)
 
 var player_id = argument0;
 var character_id = argument1;
@@ -14,23 +19,28 @@ var x_pos = argument2;
 var y_pos = argument3;
 var hsp = argument4;
 
-var bullet_id = instance_create_depth(x_pos, y_pos, 0, obj_spell1);
-
-bullet_id.hspeed = hsp;
-bullet_id.player_id = player_id;
-
-// If moving left, flip the sprite
-if hsp < 0 {
-    bullet_id.image_xscale = -1;
-}
-
 switch character_id {
     case 1:
-        bullet_id.sprite_index = spr_fireball;
+		var fireball_id = instance_create_depth(x_pos, y_pos, 0, obj_spell_simpleprojectile);
+        fireball_id.sprite_index = spr_fireball;
+		fireball_id.player_id = player_id;
+		fireball_id.hspeed = hsp;
+		if hsp < 0 {
+		fireball_id.image_xscale = -1;
+		}
         break;
-    case 2:
-        bullet_id.sprite_index = spr_arrow;
+    case 2:var arrow_id = instance_create_depth(x_pos, y_pos, 0, obj_spell_simpleprojectile);
+        arrow_id.sprite_index = spr_arrow;
+		arrow_id.player_id = player_id;
+		arrow_id.hspeed = hsp;
+		if hsp < 0 {
+		arrow_id.image_xscale = -1;
+		}
         break;
+	case 3:
+		break;
+	case 4:
+		break;
 }
 
 return id;
