@@ -22,12 +22,14 @@ var hsp = argument4;
 switch character_id{
 	//red wizard
 	case 1: //LAZOR
-
+		var laser_id = instance_create_depth(x_pos - 32, y_pos, 0, obj_LASER);
+		laser_id.player_id = player_id;
+		laser_id.player_creator = id;
 	break;
 	//blue wizard
 	case 2: //NULL
 		var shield_id = instance_create_depth(x_pos, y_pos, 0, obj_spell_null);
-		shield_id.player_id = player_id
+		shield_id.player_id = player_id;
 	break;
 	case 3:
 	break;

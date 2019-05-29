@@ -20,7 +20,13 @@ var hsp = argument4;
 
 switch character_id{
 	//red wizard
-	case 1: //exploady fireball thingy
+	case 1: 
+	if(!instance_exists(obj_exploding_fireball)){
+		var fireball_id = instance_create_depth(x_pos, y_pos, -100, obj_exploding_fireball);
+		fireball_id.player_id = player_id;
+		fireball_id.player_creator = id;
+		fireball_id.basehsp = hsp / 2;
+	}
 
 	break;
 	//blue wizard

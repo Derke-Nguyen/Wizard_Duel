@@ -6,6 +6,7 @@ second_jump_power = 7;
 movespeed = 10;
 max_health = 10;
 max_mana = 10;
+object_id = id;
 
 //CONTROLLER
 usingcontroller = false;

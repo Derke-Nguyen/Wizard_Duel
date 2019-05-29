@@ -1,0 +1,10 @@
+hsa = 0;
+vsa = 0;
+hsp = 0;
+vsp = 0;
+player_id = 0;
+player_creator = 0;
+time = 0;
+lifetime = 90;
+basehsp = 0;
+dealt_damage = false;

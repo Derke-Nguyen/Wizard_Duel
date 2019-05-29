@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "74a5615d-ab2b-4380-b6f6-aa9f171e47aa",
+            "Value": {
+                "id": "e7a63bac-5b06-48ba-98d4-471d60515ae7",
+                "resourcePath": "sprites\\spr_exploding_fireball\\spr_exploding_fireball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "75e541fe-4f9e-499d-9bbf-61ccf65581ef",
             "Value": {
                 "id": "7d3cfaf5-f8c9-49b1-a09b-ec52994ff53d",
@@ -335,6 +343,14 @@
             }
         },
         {
+            "Key": "7da79982-93f0-447d-bf24-b5a45f706f1f",
+            "Value": {
+                "id": "eed241da-6d8f-4232-8a6d-74bb2481cb4e",
+                "resourcePath": "objects\\obj_LASER\\obj_LASER.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "815d0e22-fe92-4119-902c-3e9d5eaa5a58",
             "Value": {
                 "id": "05c42322-7d85-43f0-8e65-8f9c761b9bec",
@@ -363,6 +379,14 @@
             "Value": {
                 "id": "45f8a9fd-9b7c-4ec8-ae6b-ad3c12064e12",
                 "resourcePath": "sprites\\spr_charimage\\spr_charimage.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "93ba8e64-e2b0-47dd-8678-653aec6a7d58",
+            "Value": {
+                "id": "19b71b2a-1a80-4c99-a708-93e984e557c1",
+                "resourcePath": "sprites\\spr_LASER\\spr_LASER.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -548,6 +572,14 @@
                 "id": "bb3e1acd-d917-4a28-930c-7c29d4f27b50",
                 "resourcePath": "scripts\\resolve_colliders_x\\resolve_colliders_x.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d0c1b55e-b08f-440c-a7da-54d163f0122a",
+            "Value": {
+                "id": "b33b759f-e9e4-4341-9bce-35e8131a2b4f",
+                "resourcePath": "objects\\obj_exploding_fireball\\obj_exploding_fireball.yy",
+                "resourceType": "GMObject"
             }
         },
         {
