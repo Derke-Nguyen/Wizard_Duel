@@ -27,6 +27,9 @@ switch character_id{
 		fireball_id.player_creator = id;
 		fireball_id.basehsp = hsp / 2;
 	}
+	else{
+		mana += spell2cost;
+	}
 
 	break;
 	//blue wizard
