@@ -10,7 +10,7 @@ draw_set_valign(fa_center);
 var OFFSET = 2;
 
 //For drawing the text
-var txt = text[0];
+var txt = text;
 var col = c_white;
 
 var x_position = menu_x;

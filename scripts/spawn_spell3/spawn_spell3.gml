@@ -1,12 +1,17 @@
-// create_spell3(player_id, x_pos, y_pos, hsp)
-// Returns the id of a bullet object with the appropriate values
+/// spawn_spell3(player_id, character_id, x_pos, y_pos, hsp)
+// Returns the id of a spell object with the appropriate values
 // player_id - an integer corresponding to the player number.
 //                   This is probably 1, 2, 3, 4 for player 1, player 2, etc
-// x_pos - x position to spawn bullet
-// y_pos - y position to spawn bullet
-// hsp - the bullet's horizontal speed to spawn with
-// TODO: Allow for non horizontal bullet movement?
-// RETURNS - the id of the bullet (probably an int)
+// character_id - an integer corresponding to the character number.
+//					 1 - red wizard
+//                   2 - blue wizard - removes all spells
+//                   3 - purple wizard
+//                   4 - orange wizard
+// x_pos - x position to spawn spell
+// y_pos - y position to spawn spell
+// hsp - the spell's horizontal speed to spawn with
+// TODO: Allow for non horizontal spell movement?
+// RETURNS - the id of the spell (probably an int)
 
 var player_id = argument0;
 var character_id = argument1;
@@ -21,11 +26,13 @@ switch character_id{
 	break;
 	//blue wizard
 	case 2: //NULL
-		var shield_id = instance_create_depth(x_pos, y_pos, 0, obj_null);
-		shield_id.hspeed = 0;
+		var shield_id = instance_create_depth(x_pos, y_pos, 0, obj_spell_null);
 		shield_id.player_id = player_id
 	break;
-	
+	case 3:
+	break;
+	case 4:
+	break;
 }
 
 return id;

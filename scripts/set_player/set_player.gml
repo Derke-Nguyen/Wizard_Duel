@@ -8,10 +8,6 @@
 //                   3 - purple wizard
 //                   4 - orange wizard
 
-// y_pos - y position to spawn bullet
-// hsp - the bullet's horizontal speed to spawn with
-// TODO: Allow for non horizontal bullet movement?
-// RETURNS - the id of the bullet (probably an int)
 
 var player_id = argument0;
 var character_id = argument1;
@@ -38,6 +34,28 @@ case 2:
 		case 3: player2character = 3;
 		break;
 		case 4: player2character = 4;
+	};
+break;
+case 3:
+	switch(character_id){
+		case 1: player3character = 1;
+		break;
+		case 2: player3character = 2;
+		break;
+		case 3: player3character = 3;
+		break;
+		case 4: player3character = 4;
+	};
+break;
+case 4:
+	switch(character_id){
+		case 1: player4character = 1;
+		break;
+		case 2: player4character = 2;
+		break;
+		case 3: player4character = 3;
+		break;
+		case 4: player4character = 4;
 	};
 break;
 };
