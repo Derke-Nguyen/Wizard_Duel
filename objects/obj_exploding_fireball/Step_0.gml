@@ -4,8 +4,8 @@ vsa = player_creator.vsp * 1/5;
 hsp += 0.5*hsa*(time);
 vsp += 0.5*vsa*(time);
 
-x += (hsp + basehsp);
-y += vsp;
+x += 0.8*(hsp + basehsp);
+y += 0.7*vsp;
 
 time += 0.05;
 lifetime--;

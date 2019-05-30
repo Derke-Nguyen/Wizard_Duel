@@ -1,7 +1,6 @@
-if(!facing && !moved && image_index > 2){
+if(!facing && !moved && image_index > 3){
 	if(player_creator.x > 100){
 		player_creator.x += 100;
-		
 	}
 	else{
 		player_creator.x = 10;
@@ -9,7 +8,7 @@ if(!facing && !moved && image_index > 2){
 		x = player_creator.x;
 		moved = true;
 }
-else if (facing && !moved && image_index > 2){
+else if (facing && !moved && image_index > 3){
 	if(player_creator.x < room_width - 100){
 		player_creator.x -= 100;
 	}
@@ -19,9 +18,9 @@ else if (facing && !moved && image_index > 2){
 		x = player_creator.x;
 		moved = true;
 }
-if(image_index > 2)
+if(image_index > 3)
 	image_xscale = 100;
-if(image_index >= 4){
+if(image_index >= 5){
 	instance_destroy(id, false);
 }
 
