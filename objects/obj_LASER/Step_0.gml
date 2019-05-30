@@ -29,4 +29,3 @@ player_creator.y = clamp(player_creator.y, y, y);
 player_creator.x = clamp(player_creator.x, 0, room_width);
 player_creator.facing = facing;
 
-

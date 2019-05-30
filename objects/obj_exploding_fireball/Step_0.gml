@@ -20,7 +20,7 @@ if(player_creator.key_fast_fall){
 	vsp += 1.5;
 }
 if(player_creator.key_jump){
-	vsp -= 0.75;
+	vsp -= 1.5;
 }
 if(player_creator.key_spell2){
 	if lifetime > 10
