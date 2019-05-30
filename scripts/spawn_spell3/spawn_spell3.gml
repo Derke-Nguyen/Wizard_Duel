@@ -22,9 +22,19 @@ var hsp = argument4;
 switch character_id{
 	//red wizard
 	case 1: //LAZOR
-		var laser_id = instance_create_depth(x_pos - 32, y_pos, 0, obj_LASER);
+		if(facing){
+			var laser_id = instance_create_depth(x_pos - 32, y_pos, 0, obj_LASER);
+			sprite_set_offset(spr_LASER, 0, 32);
+			laser_id.direction = 0;
+		}
+		else{
+			var laser_id = instance_create_depth(x_pos + 32, y_pos, 0, obj_LASER);
+			sprite_set_offset(spr_LASER, 64, 32);
+			laser_id.direction = 180;
+		}
 		laser_id.player_id = player_id;
 		laser_id.player_creator = id;
+		laser_id.facing = facing;
 	break;
 	//blue wizard
 	case 2: //NULL
