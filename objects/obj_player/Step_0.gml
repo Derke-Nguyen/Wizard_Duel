@@ -44,10 +44,12 @@ if key_left and not key_right {
 // Sprite flipping
 switch facing {
     case FacingDirection.Left:
-        image_xscale = -1;
+        if not charging
+			image_xscale = -1;
         break;
     case FacingDirection.Right:
-        image_xscale = 1;
+        if not charging
+			image_xscale = 1;
         break;
 }
 
