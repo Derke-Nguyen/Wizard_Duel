@@ -1,3 +1,13 @@
+//Exception made for red
+if(instance_exists(obj_LASER)){
+	if (obj_LASER.player_creator == id){
+		charging = true;
+	}
+}
+else{
+	charging = false;
+}
+
 // Inputs
 if(!usingcontroller)
 	key_right = keyboard_check(RIGHT_KEY);
@@ -60,7 +70,7 @@ if(place_meeting(x, y + 1, obj_floor) || place_meeting(x, y + 1, obj_platform)){
 	vsp = 0;
 }
 
-if key_jump {
+if key_jump and not charging {
 	switch jumps {
 		case 1:
 			// Take the absolutely larger value of jumping with no prior velocity

@@ -1,3 +1,6 @@
+//exception made for red
+charging = false;
+
 // constants
 grav = 0.7;
 fast_fall_speed = 5;
