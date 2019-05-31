@@ -119,7 +119,7 @@ if key_spell1 and mana >= spell1cost{
 }
 
 //SPELL 2
-if key_spell2 and mana >= spell2cost{
+else if key_spell2 and mana >= spell2cost{
 	// Moving left
 	if facing == FacingDirection.Left {
         spawn_spell2(player_id,character_id, SPRITE_LEFT, SPRITE_V_CENTER, -BULLET_SPEED);
@@ -130,8 +130,11 @@ if key_spell2 and mana >= spell2cost{
 	}
     mana -= spell2cost;
 }
+if(ultcastdelay != 0)
+	ultcastdelay--;
+
 //SPELL 3
-if key_spell3 and mana >= spell3cost{
+else if key_spell3 and mana >= spell3cost{
 	// Moving left
 	if facing == FacingDirection.Left {
         spawn_spell3(player_id, character_id,SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
@@ -141,6 +144,7 @@ if key_spell3 and mana >= spell3cost{
 		spawn_spell3(player_id, character_id,SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
 	}
     mana -= spell3cost;
+	ultcastdelay = 60;
 }
 
 // Invincibility Stuff

@@ -24,6 +24,7 @@ jumps = 2;
 playerHealth = 10;
 mana = 10;
 iframe = 0;
+ultcastdelay = 0;
 
 enum FacingDirection {
     Left,
