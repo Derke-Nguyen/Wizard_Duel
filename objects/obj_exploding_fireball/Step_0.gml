@@ -1,6 +1,3 @@
-hsa = player_creator.hsp * 1/5;
-vsa = player_creator.vsp * 1/5;
-
 hsp += 0.5*hsa*(time);
 vsp += 0.5*vsa*(time);
 
@@ -19,8 +16,14 @@ if (lifetime <= 10){
 if(player_creator.key_fast_fall){
 	vsp += 1.5;
 }
-if(player_creator.key_jump){
+if(player_creator.key_up){
 	vsp -= 1.5;
+}
+if(player_creator.key_left){
+	hsp -= 1;
+}
+if(player_creator.key_right){
+	hsp += 1;
 }
 if(player_creator.key_spell2){
 	if lifetime > 10
@@ -28,3 +31,4 @@ if(player_creator.key_spell2){
 }
 
 x = clamp(x, 0, room_width);
+y = clamp(y, 0, room_height - obj_floor.sprite_height);

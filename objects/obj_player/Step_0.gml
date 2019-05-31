@@ -9,19 +9,21 @@ else{
 }
 
 // Inputs
-if(!usingcontroller)
+if(!usingcontroller){
 	key_right = keyboard_check(RIGHT_KEY);
 	key_left = keyboard_check(LEFT_KEY);
 	key_jump = keyboard_check_pressed(JUMP_KEY);
+	key_up = keyboard_check(JUMP_KEY); //for red's fireball
 	key_fast_fall = keyboard_check(FAST_FALL_KEY);
 	key_spell1 = keyboard_check_pressed(SPELL1_KEY);
 	key_spell2 = keyboard_check_pressed(SPELL2_KEY);
 	key_spell3 = keyboard_check_pressed(SPELL3_KEY);
-
+}
 if(usingcontroller){
 	key_right = gamepad_button_check(0,RIGHT_KEY);
 	key_left = gamepad_button_check(0,LEFT_KEY);
 	key_jump = gamepad_button_check_pressed(0,JUMP_KEY);
+	key_up = gamepad_button_check(0, JUMP_KEY); //for red's fireball
 	key_fast_fall = gamepad_button_check(0,FAST_FALL_KEY);
 	key_spell1 = gamepad_button_check_pressed(0,SPELL1_KEY);
 	key_spell2 = gamepad_button_check_pressed(0,SPELL2_KEY);
