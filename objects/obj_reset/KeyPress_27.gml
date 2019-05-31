@@ -1,1 +1,1 @@
-room_goto(rms_main_screen);
+room_goto(rms_mainscreen);

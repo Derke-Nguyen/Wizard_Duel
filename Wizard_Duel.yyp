@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "38a8b1a7-65fc-4fa1-95a1-391f1655b91c",
+            "Value": {
+                "id": "4be889cf-6a73-40c4-adc2-5a3569c2cb31",
+                "resourcePath": "objects\\obj_characterselect_p1\\obj_characterselect_p1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3b413960-43c4-4378-92f9-4a19505ab17b",
             "Value": {
                 "id": "9178131d-b7e0-40ee-a3dd-36ad2cdc7054",
@@ -274,7 +282,7 @@
             "Key": "6d4cd92d-d7d0-44be-bac8-03e3e7716812",
             "Value": {
                 "id": "9a3d4e6f-6225-44f1-8ea4-82de78e3b5bd",
-                "resourcePath": "rooms\\rms_main_screen\\rms_main_screen.yy",
+                "resourcePath": "rooms\\rms_mainscreen\\rms_mainscreen.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -283,6 +291,14 @@
             "Value": {
                 "id": "6c49f48e-afbe-4966-b848-95ee6c5e807f",
                 "resourcePath": "objects\\obj_spell_shield\\obj_spell_shield.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "742c47b9-1e25-42ff-bafe-a962ac064729",
+            "Value": {
+                "id": "09e9cd9c-af63-476c-9f08-2116dd9e0073",
+                "resourcePath": "objects\\obj_playerselectcontroller\\obj_playerselectcontroller.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -343,6 +359,14 @@
             }
         },
         {
+            "Key": "7d1c9200-f4b8-469e-a35c-909ff0614e43",
+            "Value": {
+                "id": "434ba8f3-de1e-4930-a566-af6cf7893548",
+                "resourcePath": "objects\\obj_characterselect\\obj_characterselect.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7da79982-93f0-447d-bf24-b5a45f706f1f",
             "Value": {
                 "id": "eed241da-6d8f-4232-8a6d-74bb2481cb4e",
@@ -364,6 +388,22 @@
                 "id": "cef907e1-94ce-41cc-9f18-41f619d42ba1",
                 "resourcePath": "views\\889a8df9-e1c3-469c-bc01-38485eaeeb80.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "89427ff0-3e17-46dd-ad53-b79d635407a2",
+            "Value": {
+                "id": "33e7bc22-6de9-4224-a0ee-31fde4c3fe17",
+                "resourcePath": "sprites\\spr_characterselect\\spr_characterselect.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8b4f65d5-7cf0-4d60-aa97-497142f6ea50",
+            "Value": {
+                "id": "7e92f8bf-50fe-48fe-ae95-92eac10cd121",
+                "resourcePath": "rooms\\rms_characterselect\\rms_characterselect.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -516,6 +556,14 @@
                 "id": "f834f89f-22f6-4b88-baa3-111033f81630",
                 "resourcePath": "rooms\\rms_game\\rms_game.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "bc749993-6e00-4a46-9819-822492a43865",
+            "Value": {
+                "id": "7c6e862a-e331-4c2c-bdb0-c07fe0ff5900",
+                "resourcePath": "objects\\obj_characterselect_p2\\obj_characterselect_p2.yy",
+                "resourceType": "GMObject"
             }
         },
         {

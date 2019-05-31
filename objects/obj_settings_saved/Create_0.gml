@@ -20,4 +20,4 @@ player3character = 3;
 globalvar player4character;
 player4character = 4;
 
-room_goto(rms_main_screen);
+room_goto(rms_mainscreen);

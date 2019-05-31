@@ -19,9 +19,20 @@ var x_pos = argument2;
 var y_pos = argument3;
 var hsp = argument4;
 
+var originx = x_pos;
+var originy = y_pos;
+
+//determines the spawn point of the spell
+if(hsp < 0){
+	originx -= 3;
+}
+else{
+	originx += 3;
+}
+
 switch character_id {
     case 1:
-		var fireball_id = instance_create_depth(x_pos, y_pos, 0, obj_spell_simpleprojectile);
+		var fireball_id = instance_create_depth(originx, originy, 0, obj_spell_simpleprojectile);
         fireball_id.sprite_index = spr_fireball;
 		fireball_id.player_id = player_id;
 		fireball_id.hspeed = hsp;
@@ -29,7 +40,7 @@ switch character_id {
 		fireball_id.image_xscale = -1;
 		}
         break;
-    case 2:var arrow_id = instance_create_depth(x_pos, y_pos, 0, obj_spell_simpleprojectile);
+    case 2:var arrow_id = instance_create_depth(originx, originy, 0, obj_spell_simpleprojectile);
         arrow_id.sprite_index = spr_arrow;
 		arrow_id.player_id = player_id;
 		arrow_id.hspeed = hsp;

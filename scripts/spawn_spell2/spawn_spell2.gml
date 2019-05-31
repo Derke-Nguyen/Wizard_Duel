@@ -18,11 +18,27 @@ var x_pos = argument2;
 var y_pos = argument3;
 var hsp = argument4;
 
+var originx = x_pos;
+var originy = y_pos;
+
+if(hsp < 0){
+	originx -= 3;
+}
+else{
+	originy += 3;
+}
+
 switch character_id{
 	//red wizard
 	case 1: 
+	if(hsp < 0){
+		originx -= 10;
+	}
+	else{
+		originx += 10;
+	}
 	if(!instance_exists(obj_exploding_fireball)){
-		var fireball_id = instance_create_depth(x_pos, y_pos, -100, obj_exploding_fireball);
+		var fireball_id = instance_create_depth(originx, originy, -100, obj_exploding_fireball);
 		fireball_id.player_id = player_id;
 		fireball_id.player_creator = id;
 		fireball_id.basehsp = hsp / 2;
@@ -34,11 +50,17 @@ switch character_id{
 	break;
 	//blue wizard
 	case 2: //shield thingy
-		var shield_id = instance_create_depth(x_pos, y_pos, 0, obj_spell_shield);
-		shield_id.player_id = player_id;
-		if(hsp < 0){
-			shield_id.image_xscale = -1;
-		}
+	if(hsp < 0){
+		originx -= 10;
+	}
+	else{
+		originx += 10;
+	}
+	var shield_id = instance_create_depth(originx, originy, 0, obj_spell_shield);
+	shield_id.player_id = player_id;
+	if(hsp < 0){
+		shield_id.image_xscale = -1;
+	}
 	break;
 	case 3:
 	break;

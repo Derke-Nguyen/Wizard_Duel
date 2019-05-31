@@ -32,7 +32,7 @@ if(menu_control){
 
 if(menu_committed == 0){
 menu_y_target = gui_width + 400;
-room_goto(rms_main_screen)
+room_goto(rms_mainscreen)
 }
 
 if(menu_committed != -1){
