@@ -132,11 +132,11 @@ if key_spell2 and mana >= spell2cost{
 if key_spell3 and mana >= spell3cost{
 	// Moving left
 	if facing == FacingDirection.Left {
-        spawn_spell3(player_id, character_id,SPRITE_LEFT, SPRITE_V_CENTER, -BULLET_SPEED);
+        spawn_spell3(player_id, character_id,SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
 	}
     // Moving right
 	else {
-		spawn_spell3(player_id, character_id,SPRITE_RIGHT, SPRITE_V_CENTER, BULLET_SPEED);
+		spawn_spell3(player_id, character_id,SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
 	}
     mana -= spell3cost;
 }
@@ -150,7 +150,7 @@ image_alpha = (iframe % 2) ? 0.5 : 1;
 
 // Game end transition
 if playerHealth <= 0 {
-	gameover_transition(player_id);
+	gameover_transition(character_id);
 }
 
 // COLLISION CODE
