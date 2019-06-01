@@ -164,6 +164,9 @@ else if key_spell3 and mana >= spell3cost{
 if iframe > 0 {
 	iframe--;
 }
+if iframe < 0{
+	iframe++;
+}
 // Flicker while in invicibility frames
 image_alpha = (iframe % 2) ? 0.5 : 1;
 
