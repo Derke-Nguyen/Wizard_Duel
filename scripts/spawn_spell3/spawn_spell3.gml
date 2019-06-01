@@ -42,7 +42,7 @@ switch character_id{
 		shield_id.player_id = player_id;
 	break;
 	case 3:
-	//purple wizard
+		//purple wizard
 		//fills the room
 		for(i = 0; i < room_width / 32; ++i){
 			for(j = 0; j < room_height / 32; ++j){

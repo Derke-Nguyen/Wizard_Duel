@@ -3,6 +3,6 @@ if(other.player_id != player_id){
 	if(other.iframe <= 0){ //walking on traps when you have an iframe destroys them
 		other.playerHealth--;
 		if(other.iframe == 0)
-			other.iframe = 15;
+			other.iframe = 30;
 	}
 }
