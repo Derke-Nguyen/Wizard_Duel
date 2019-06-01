@@ -23,12 +23,12 @@ switch character_id{
 	//red wizard
 	case 1: //LAZOR
 		if(facing){
-			var laser_id = instance_create_depth(x, y, 0, obj_LASER);
+			var laser_id = instance_create_depth(x, y, 0, obj_spell_LASER);
 			sprite_set_offset(spr_LASER, 0, 32);
 			laser_id.direction = 0;
 		}
 		else{
-			var laser_id = instance_create_depth(x, y, 0, obj_LASER);
+			var laser_id = instance_create_depth(x, y, 0, obj_spell_LASER);
 			sprite_set_offset(spr_LASER, 64, 32);
 			laser_id.direction = 180;
 		}
@@ -51,7 +51,7 @@ switch character_id{
 			}
 		}
 	break;
-	case 4:
+	case 4: //overridden in the player
 	break;
 }
 

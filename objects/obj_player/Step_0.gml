@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 //exception made for red
 if(instance_exists(obj_LASER)){
 	if (obj_LASER.player_creator == id){
+=======
+//Exception made for red
+if(instance_exists(obj_spell_LASER)){
+	if (obj_spell_LASER.player_creator == id){
+>>>>>>> cbbf35777b2fe387984fdb047255dbbcef67d05b
 		charging = true;
 	}
 }
@@ -141,25 +147,52 @@ else if key_spell2 and mana >= spell2cost{
 	else {
 		spawn_spell2(player_id,character_id, SPRITE_RIGHT, SPRITE_V_CENTER, BULLET_SPEED);
 	}
+	//if orange
+	if(character_id == 4){
+		movespeed = 20;
+		speedchangedelay = 40;
+	}
     mana -= spell2cost;
 }
-if(ultcastdelay != 0)
-	ultcastdelay--;
 
 //SPELL 3
 else if key_spell3 and mana >= spell3cost{
+	if(character_id == 1){
+		ultcastdelay = 60;
+	}
+	mana -= spell3cost;
 	// Moving left
 	if facing == FacingDirection.Left {
         spawn_spell3(player_id, character_id,SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
+		//if orange
+		if(character_id == 4){
+			x -= 100;
+			ultcastdelay = 0;
+		}
 	}
     // Moving right
 	else {
 		spawn_spell3(player_id, character_id,SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
+		//if orange
+		if(character_id == 4){
+			x += 100
+			ultcastdelay = 0;
+		}
 	}
-    mana -= spell3cost;
-	ultcastdelay = 60;
+    
+	
 }
 
+if(ultcastdelay != 0)
+	ultcastdelay--;
+
+//orange move fast spell
+if(speedchangedelay > 0){
+	speedchangedelay--;
+}
+else{
+	movespeed = 10;
+}
 // Invincibility Stuff
 if iframe > 0 {
 	iframe--;
@@ -168,9 +201,11 @@ if iframe > 0 {
 image_alpha = (iframe % 2) ? 0.5 : 1;
 
 // Game end transition
+/*
 if playerHealth <= 0 {
-	gameover_transition(character_id);
+	gameover_transition(player_id);
 }
+*/
 
 // COLLISION CODE
 // This code does the following things
@@ -208,3 +243,4 @@ hsp = resolve[1];
 ds_list_destroy(colliders_list);
 
 x = clamp(x, 0, room_width);
+

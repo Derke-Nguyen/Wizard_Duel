@@ -38,7 +38,7 @@ switch character_id{
 		originx += 10;
 	}
 	if(!instance_exists(obj_exploding_fireball)){
-		var fireball_id = instance_create_depth(originx, originy, -100, obj_exploding_fireball);
+		var fireball_id = instance_create_depth(originx, originy, -100, obj_spell_explosion);
 		fireball_id.player_id = player_id;
 		fireball_id.player_creator = id;
 		fireball_id.basehsp = hsp / 2;
@@ -78,7 +78,7 @@ switch character_id{
 		var trap_id = instance_create_depth(no_trap, ground_level + 14, 0, obj_slow_trap);
 		trap_id.player_id = player_id;
 	break;
-	case 4:
+	case 4: //overridden in the player
 	break;
 	
 }
