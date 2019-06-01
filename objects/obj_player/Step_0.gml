@@ -182,9 +182,11 @@ if iframe > 0 {
 image_alpha = (iframe % 2) ? 0.5 : 1;
 
 // Game end transition
+/*
 if playerHealth <= 0 {
-	gameover_transition(character_id);
+	gameover_transition(player_id);
 }
+*/
 
 // COLLISION CODE
 // This code does the following things
