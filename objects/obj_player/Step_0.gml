@@ -1,4 +1,4 @@
-//Exception made for red
+//exception made for red
 if(instance_exists(obj_LASER)){
 	if (obj_LASER.player_creator == id){
 		charging = true;
@@ -6,6 +6,19 @@ if(instance_exists(obj_LASER)){
 }
 else{
 	charging = false;
+}
+
+//exception made for purple
+if(slowed_time > 0){
+	if(!slowed){
+		movespeed_scale = 0.5;
+		slowed = true;
+	}
+	slowed_time--;
+}
+else{
+	slowed = false;
+	movespeed_scale = 1;
 }
 
 // Inputs
@@ -32,10 +45,10 @@ if(usingcontroller){
 
 // Player controlled movement
 if key_left and not key_right {
-    hsp = -movespeed;
+    hsp = -movespeed *  movespeed_scale;
     facing = FacingDirection.Left;
 } else if not key_left and key_right {
-    hsp = movespeed;
+    hsp = movespeed * movespeed_scale;
     facing = FacingDirection.Right;
 } else {
     hsp = 0;

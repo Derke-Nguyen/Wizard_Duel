@@ -1,12 +1,17 @@
 //exception made for red
 charging = false;
 
+//exception made for purple
+slowed_time = 0;
+slowed = false;
+
 // constants
 grav = 0.7;
 fast_fall_speed = 5;
 first_jump_power = 11;
 second_jump_power = 7;
 movespeed = 10;
+movespeed_scale = 1;
 max_health = 10;
 max_mana = 10;
 object_id = id;

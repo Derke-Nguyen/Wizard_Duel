@@ -42,6 +42,14 @@ switch character_id{
 		shield_id.player_id = player_id;
 	break;
 	case 3:
+	//purple wizard
+		//fills the room
+		for(i = 0; i < room_width / 32; ++i){
+			for(j = 0; j < room_height / 32; ++j){
+				var drain_id = instance_create_depth(64 * i, 64 * j, -100, obj_drain);
+				drain_id.player_id = player_id;
+			}
+		}
 	break;
 	case 4:
 	break;
