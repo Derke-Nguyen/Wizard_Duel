@@ -49,8 +49,21 @@ switch character_id {
 		}
         break;
 	case 3:
+		
 		break;
 	case 4:
+		if(hsp < 0){
+			originx += 6;
+		}
+		else{
+			originx -= 6;
+		}
+		var punch_id = instance_create_depth(originx, originy, 0, obj_spell_punch);
+		punch_id.player_id = player_id;
+		punch_id.hspeed = hsp;
+		if hsp < 0 {
+		punch_id.image_xscale = -1;
+		}
 		break;
 }
 
