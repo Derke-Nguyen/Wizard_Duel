@@ -19,7 +19,7 @@ else if (!facing && !moved && image_index > laser_firing){
 	moved = true;
 }
 if(image_index > laser_firing)
-	image_xscale = 100;
+	image_xscale += 0.25;
 if(image_index >= laser_ending){
 	instance_destroy(id, false);
 }
