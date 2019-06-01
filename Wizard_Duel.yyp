@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "4dd945fe-68ed-4feb-9838-1cce3d93aabf",
+            "Value": {
+                "id": "61cb0832-aaf9-48e0-a3ca-eeed51abcfe1",
+                "resourcePath": "scripts\\gameover_check\\gameover_check.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4f14aa8d-9011-4727-bbae-e7fd4bd34588",
             "Value": {
                 "id": "549eac3f-2faf-4f55-ac9e-152ea2e8747f",
@@ -702,7 +710,8 @@
         "7a075e4d-dff0-4959-8b7c-267e8f99b47a",
         "fb58a142-0265-4385-b1c9-4e2215fdc604",
         "3b413960-43c4-4378-92f9-4a19505ab17b",
-        "4f456af0-c6b5-4f4e-afcf-0a41a5706280"
+        "4f456af0-c6b5-4f4e-afcf-0a41a5706280",
+        "4dd945fe-68ed-4feb-9838-1cce3d93aabf"
     ],
     "tutorial": ""
 }

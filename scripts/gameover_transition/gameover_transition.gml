@@ -3,7 +3,9 @@
 //  winner_id - the id of the player who "you're winner"d
 
 globalvar gl_winner_id;
+globalvar gl_winner_char;
 gl_winner_id = argument0;
+gl_winner_char = argument1;
 
 room_goto(rms_gameover);
 
