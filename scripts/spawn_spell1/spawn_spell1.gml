@@ -35,7 +35,6 @@ switch character_id {
 		var fireball_id = instance_create_depth(originx, originy, 0, obj_spell_simpleprojectile);
         fireball_id.sprite_index = spr_fireball;
 		fireball_id.player_id = player_id;
-		fireball_id.character_id = 1;
 		fireball_id.hspeed = hsp;
 		if hsp < 0 {
 			fireball_id.image_xscale = -1;
@@ -45,18 +44,15 @@ switch character_id {
 		var arrow_id = instance_create_depth(originx, originy, 0, obj_spell_simpleprojectile);
         arrow_id.sprite_index = spr_arrow;
 		arrow_id.player_id = player_id;
-		arrow_id.character_id = 2;
 		arrow_id.hspeed = hsp;
 		if hsp < 0 {
 			arrow_id.image_xscale = -1;
 		}
         break;
 	case 3:
-<<<<<<< HEAD
 		var ground_level = y;
 		var no_trap = x;
-		while(!place_meeting(no_trap, ground_level, obj_floor) 
-			&& !place_meeting(no_trap, ground_level, obj_platform)){
+		while(!place_meeting(no_trap, ground_level, obj_floor) && !place_meeting(no_trap, ground_level, obj_platform)){
 			ground_level++;
 		}
 		while(place_meeting(no_trap, ground_level, obj_trap)) {
@@ -67,23 +63,8 @@ switch character_id {
 		}
 		var trap_id = instance_create_depth(no_trap, ground_level + 14, 0, obj_basic_trap);
 		trap_id.player_id = player_id;
-=======
-		
->>>>>>> cbbf35777b2fe387984fdb047255dbbcef67d05b
 		break;
 	case 4:
-		if(hsp < 0){
-			originx += 6;
-		}
-		else{
-			originx -= 6;
-		}
-		var punch_id = instance_create_depth(originx, originy, 0, obj_spell_punch);
-		punch_id.player_id = player_id;
-		punch_id.hspeed = hsp;
-		if hsp < 0 {
-		punch_id.image_xscale = -1;
-		}
 		break;
 }
 
