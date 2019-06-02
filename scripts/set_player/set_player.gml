@@ -15,47 +15,47 @@ var character_id = argument1;
 switch(player_id){
 case 1:
 	switch(character_id){
-		case 1: player1character = 1;
+		case 1: gl_player1character = 1;
 		break;
-		case 2: player1character = 2;
+		case 2: gl_player1character = 2;
 		break;
-		case 3: player1character = 3;
+		case 3: gl_player1character = 3;
 		break;
-		case 4: player1character = 4;
+		case 4: gl_player1character = 4;
 		break;
 	};
 break;
 case 2:
 	switch(character_id){
-		case 1: player2character = 1;
+		case 1: gl_player2character = 1;
 		break;
-		case 2: player2character = 2;
+		case 2: gl_player2character = 2;
 		break;
-		case 3: player2character = 3;
+		case 3: gl_player2character = 3;
 		break;
-		case 4: player2character = 4;
+		case 4: gl_player2character = 4;
 	};
 break;
 case 3:
 	switch(character_id){
-		case 1: player3character = 1;
+		case 1: gl_player3character = 1;
 		break;
-		case 2: player3character = 2;
+		case 2: gl_player3character = 2;
 		break;
-		case 3: player3character = 3;
+		case 3: gl_player3character = 3;
 		break;
-		case 4: player3character = 4;
+		case 4: gl_player3character = 4;
 	};
 break;
 case 4:
 	switch(character_id){
-		case 1: player4character = 1;
+		case 1: gl_player4character = 1;
 		break;
-		case 2: player4character = 2;
+		case 2: gl_player4character = 2;
 		break;
-		case 3: player4character = 3;
+		case 3: gl_player4character = 3;
 		break;
-		case 4: player4character = 4;
+		case 4: gl_player4character = 4;
 	};
 break;
 };

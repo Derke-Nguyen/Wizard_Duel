@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(player != 2 || !player2controller){
+if(player != 2 || !gl_player2controller){
 	if(keyboard_check_pressed(LEFT_KEY)){
 		left = true;
 	}
@@ -10,7 +10,7 @@ if(player != 2 || !player2controller){
 	}
 }
 
-if(player == 2 && player2controller){
+if(player == 2 && gl_player2controller){
 	if(gamepad_button_check_pressed(0,LEFT_KEY)){
 		left = true;
 		}

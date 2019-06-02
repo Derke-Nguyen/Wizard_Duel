@@ -4,15 +4,13 @@ charging = false;
 //exception made for purple
 slowed_time = 0;
 
-// constants
-grav = 0.7;
-fast_fall_speed = 5;
-first_jump_power = 11;
-second_jump_power = 7;
-movespeed = 10;
-max_health = 10;
-max_mana = 10;
-object_id = id;
+// CONSTANTS
+c_grav = 0.7;
+c_fast_fall_speed = 5;
+c_first_jump_power = 11;
+c_second_jump_power = 7;
+c_max_health = 10;
+c_max_mana = 10;
 
 //CONTROLLER
 usingcontroller = false;
@@ -29,6 +27,7 @@ mana = 10;
 iframe = 0;
 ultcastdelay = 0;
 speedchangedelay = 20;
+movespeed = 10;
 
 enum FacingDirection {
     Left,

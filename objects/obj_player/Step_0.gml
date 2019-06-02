@@ -65,15 +65,15 @@ switch facing {
 
 // Gravity
 if vsp < 10 {
-	vsp += grav;
+	vsp += c_grav;
 }
 
 // Fast Fall
 if key_fast_fall {
 	if vsp < 0 {
-		vsp = fast_fall_speed;
+		vsp = c_fast_fall_speed;
 	} else {
-		vsp += fast_fall_speed;
+		vsp += c_fast_fall_speed;
 	}
 }
 
@@ -89,10 +89,10 @@ if key_jump and not charging {
 			// Take the absolutely larger value of jumping with no prior velocity
 			// and jumping with current velocity. This is done so that the second 
 			// jump always "feels" like a jump.
-			vsp = min(-second_jump_power, vsp - second_jump_power);
+			vsp = min(-c_second_jump_power, vsp - c_second_jump_power);
 			break;
 		case 2:
-			vsp = min(-first_jump_power, vsp - first_jump_power);
+			vsp = min(-c_first_jump_power, vsp - c_first_jump_power);
 			break;
 		default:
 			// lmao nothing

@@ -1,6 +1,9 @@
-/// gameover_transition(winner_id)
-//  Does the game over transition
-//  winner_id - the id of the player who "you're winner"d
+/// gameover_transition(gl_winner_id, gl_winner_char)
+// Sets the end game room with the player winner and what character they played
+// gl_winner_id - Returns the integer of the player that is the winner
+// gl_winner_char - Returns the integer of the character of the winner
+// TODO: smoother transitions?
+// RETURNS - no clue
 
 globalvar gl_winner_id;
 globalvar gl_winner_char;

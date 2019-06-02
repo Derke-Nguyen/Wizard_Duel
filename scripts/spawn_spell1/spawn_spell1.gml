@@ -19,10 +19,10 @@ var x_pos = argument2;
 var y_pos = argument3;
 var hsp = argument4;
 
+//variables for the spawn points of the spell
 var originx = x_pos;
 var originy = y_pos;
 
-//determines the spawn point of the spell
 if(hsp < 0){
 	originx -= 3;
 }

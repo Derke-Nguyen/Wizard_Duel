@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-usingcontroller = player2controller;
+usingcontroller = gl_player2controller;
 if(!usingcontroller){
 	LEFT_KEY = vk_left;
 	RIGHT_KEY = vk_right;
@@ -24,8 +24,7 @@ if(usingcontroller){
 }
 
 player_id = 2;
-character_id = player2character;
-character_id = player2character;
+character_id = gl_player2character;
 switch(character_id){
 	case 1: sprite_index = spr_red;
 	break;

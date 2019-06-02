@@ -14,7 +14,7 @@ SPELL3_KEY = ord("Y");
 
 player_id = 1;
 
-character_id = player1character;
+character_id = gl_player1character;
 //setup character
 switch(character_id){
 	case 1: sprite_index = spr_red;

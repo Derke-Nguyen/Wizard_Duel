@@ -5,7 +5,7 @@
 // You can write your code in this editor
 event_inherited();
 player = 2;
-if(player2controller){
+if(gl_player2controller){
 	LEFT_KEY = gp_padl;
 	RIGHT_KEY = gp_padr;
 }

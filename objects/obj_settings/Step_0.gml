@@ -44,13 +44,13 @@ if(menu_committed != -1){
 		case 3: //something
 		break;
 		case 4:
-		if(player2controller){
-			 player2controller = false;
+		if(gl_player2controller){
+			 gl_player2controller = false;
 			 menu[4] = "Player 2: Keyboard Monkey";
 			 break;
 		}
 		else {
-			player2controller = true;
+			gl_player2controller = true;
 			menu[4] = "Player 2: Controller Hog";
 			break;
 		}//set player 2 to controller
