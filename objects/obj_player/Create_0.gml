@@ -3,7 +3,6 @@ charging = false;
 
 //exception made for purple
 slowed_time = 0;
-slowed = false;
 
 // constants
 grav = 0.7;

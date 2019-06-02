@@ -37,7 +37,7 @@ switch character_id{
 	else{
 		originx += 10;
 	}
-	if(!instance_exists(obj_exploding_fireball)){
+	if(!instance_exists(obj_spell_explosion)){
 		var fireball_id = instance_create_depth(originx, originy, -100, obj_spell_explosion);
 		fireball_id.player_id = player_id;
 		fireball_id.player_creator = id;
@@ -65,17 +65,21 @@ switch character_id{
 	case 3:
 		var ground_level = y;
 		var no_trap = x;
-		while(!place_meeting(no_trap, ground_level, obj_floor) 
-			&& !place_meeting(no_trap, ground_level, obj_platform)){
+		while(!place_meeting(no_trap, ground_level, obj_floor) && !place_meeting(no_trap, ground_level, obj_platform)){
 			ground_level++;
-			while(place_meeting(no_trap, ground_level, obj_trap)) {
-			if(hsp < 0)
+		}
+		while(place_meeting(no_trap, ground_level, obj_trap)) {
+			if(hsp < 0){
 				no_trap--;
-			else
+			}
+			else{
 				no_trap++;
+			}
+			while(!place_meeting(no_trap, ground_level, obj_floor) && !place_meeting(no_trap, ground_level, obj_platform)){
+				ground_level++;
+			}
 		}
-		}
-		var trap_id = instance_create_depth(no_trap, ground_level + 14, 0, obj_slow_trap);
+		var trap_id = instance_create_depth(no_trap, ground_level + 12, 0, obj_slow_trap);
 		trap_id.player_id = player_id;
 	break;
 	case 4: //overridden in the player
