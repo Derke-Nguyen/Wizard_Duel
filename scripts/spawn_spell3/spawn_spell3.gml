@@ -48,6 +48,7 @@ switch character_id{
 			for(j = 0; j < room_height / 32; ++j){
 				var drain_id = instance_create_depth(64 * i, 64 * j, -100, obj_drain);
 				drain_id.player_id = player_id;
+				drain_id.character_id = character_id;
 			}
 		}
 	break;
