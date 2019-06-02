@@ -18,10 +18,10 @@ menu_item_height = font_get_size(fMenu);
 menu_committed = -1;
 menu_control = true;
 
-if(!player2controller){
+if(!gl_player2controller){
 	menu[4] = "Player 2: Keyboard Monkey";
 }
-if(player2controller){
+if(gl_player2controller){
 	menu[4] = "Player 2: Controller Hog";
 }
 menu[3] = "something";
