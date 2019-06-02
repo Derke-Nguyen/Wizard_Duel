@@ -69,6 +69,7 @@ switch character_id {
 		}
 		var trap_id = instance_create_depth(no_trap, ground_level + 12, 0, obj_basic_trap);
 		trap_id.player_id = player_id;
+		trap_id.character_id = 3;
 		break;
 	case 4:
 		if(hsp < 0){
