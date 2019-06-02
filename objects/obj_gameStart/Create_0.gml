@@ -1,5 +1,4 @@
 randomize();
-
 /// @description siwei's player spawn
 D = 64;
 
