@@ -5,8 +5,7 @@
 // TODO: smoother transitions?
 // RETURNS - no clue
 
-globalvar gl_winner_id;
-globalvar gl_winner_char;
+
 gl_winner_id = argument0;
 gl_winner_char = argument1;
 

@@ -54,10 +54,10 @@ if(!usingcontroller){
 if(usingcontroller){
 	LEFT_KEY = gp_padl;
 	RIGHT_KEY = gp_padr;
-	JUMP_KEY = gp_padu;
+	JUMP_KEY = gp_face4;
 	FAST_FALL_KEY = gp_padd;
 	SPELL1_KEY = gp_face3;
-	SPELL2_KEY = gp_face4;
+	SPELL2_KEY = gp_face1;
 	SPELL3_KEY = gp_face2;
 }
 

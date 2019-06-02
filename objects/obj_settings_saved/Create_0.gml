@@ -19,4 +19,7 @@ gl_player3character = 3;
 globalvar gl_player4character;
 gl_player4character = 4;
 
+globalvar gl_winner_id;
+globalvar gl_winner_char;
+
 room_goto(rms_mainscreen);

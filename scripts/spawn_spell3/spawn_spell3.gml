@@ -40,17 +40,17 @@ switch character_id{
 	case 2: //NULL
 		var shield_id = instance_create_depth(x_pos, y_pos, 0, obj_spell_null);
 		shield_id.player_id = player_id;
+		id.mana += 4;
 	break;
 	case 3:
 		//purple wizard
 		//fills the room
-		for(i = 0; i < room_width / 32; ++i){
-			for(j = 0; j < room_height / 32; ++j){
-				var drain_id = instance_create_depth(64 * i, 64 * j, -100, obj_drain);
-				drain_id.player_id = player_id;
-				drain_id.character_id = character_id;
-			}
-		}
+		var drain_id = instance_create_depth(0, 0, -100, obj_drain);
+			drain_id.player_id = player_id;
+			drain_id.character_id = character_id;
+			drain_id.image_xscale = room_width / 64;
+			drain_id.image_yscale = room_height / 64;
+			id.slowed_time = 25;
 	break;
 	case 4: //overridden in the player
 	break;

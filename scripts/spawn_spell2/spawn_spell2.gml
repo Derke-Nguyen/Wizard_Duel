@@ -61,6 +61,7 @@ switch character_id{
 	if(hsp < 0){
 		shield_id.image_xscale = -1;
 	}
+	id.mana += 2;
 	break;
 	case 3:
 		var ground_level = y;
