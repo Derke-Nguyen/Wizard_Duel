@@ -1,17 +1,15 @@
-/// @description draws the thing
-
 /// @description draw menu
 
 //SETS FONTS AND HOW TO ALLIGN THE TEXTS
 draw_set_font(menu_font);
 draw_set_halign(fa_center);
-draw_set_valign(fa_center);
+draw_set_valign(fa_bottom);
 
 var OFFSET = 2;
 
 //FOR EACH OPTION
 for(var i = 0; i< menu_items; ++i){
-	var txt = menu[i];
+	var txt = controllers[i];
 	//IF THIS OPTION IS CURRENT SELECTED
 	if(menu_cursor == i){
 		txt = string_insert("< ", txt, 0);
@@ -34,4 +32,3 @@ for(var i = 0; i< menu_items; ++i){
 	draw_set_color(col);
 	draw_text(x_position, y_position, txt);
 }
-

@@ -18,45 +18,33 @@ else{
 }
 
 // Inputs
-if(!usingcontroller){
-	key_right = keyboard_check(RIGHT_KEY);
-	key_left = keyboard_check(LEFT_KEY);
-	key_jump = keyboard_check_pressed(JUMP_KEY);
-	key_up = keyboard_check(JUMP_KEY); //for red's fireball
-	key_fast_fall = keyboard_check(FAST_FALL_KEY);
-	key_spell1 = keyboard_check_pressed(SPELL1_KEY);
-	key_spell2 = keyboard_check_pressed(SPELL2_KEY);
-	key_spell3 = keyboard_check_pressed(SPELL3_KEY);
-}
-if(usingcontroller){
-	key_right = gamepad_button_check(0,RIGHT_KEY);
-	key_left = gamepad_button_check(0,LEFT_KEY);
-	key_jump = gamepad_button_check_pressed(0,JUMP_KEY);
-	key_up = gamepad_button_check(0, JUMP_KEY); //for red's fireball
-	key_fast_fall = gamepad_button_check(0,FAST_FALL_KEY);
-	key_spell1 = gamepad_button_check_pressed(0,SPELL1_KEY);
-	key_spell2 = gamepad_button_check_pressed(0,SPELL2_KEY);
-	key_spell3 = gamepad_button_check_pressed(0,SPELL3_KEY);
-}
+key_right = gamepad_button_check(0,RIGHT_KEY);
+key_left = gamepad_button_check(0,LEFT_KEY);
+key_jump = gamepad_button_check_pressed(0,JUMP_KEY);
+key_up = gamepad_button_check(0, JUMP_KEY); //for red's fireball
+key_fast_fall = gamepad_button_check(0,FAST_FALL_KEY);
+key_spell1 = gamepad_button_check_pressed(0,SPELL1_KEY);
+key_spell2 = gamepad_button_check_pressed(0,SPELL2_KEY);
+key_spell3 = gamepad_button_check_pressed(0,SPELL3_KEY);
 
 // Player controlled movement
 if key_left and not key_right {
     hsp = -movespeed * movespeed_scale;
-    facing = FacingDirection.Left;
+    facing = cFacingDirection.Left;
 } else if not key_left and key_right {
     hsp = movespeed * movespeed_scale;
-    facing = FacingDirection.Right;
+    facing = cFacingDirection.Right;
 } else {
     hsp = 0;
 }
 
 // Sprite flipping
 switch facing {
-    case FacingDirection.Left:
+    case cFacingDirection.Left:
         if not charging
 			image_xscale = -1;
         break;
-    case FacingDirection.Right:
+    case cFacingDirection.Right:
         if not charging
 			image_xscale = 1;
         break;
@@ -119,7 +107,7 @@ var SPRITE_LEFT = x - abs(sprite_width) / 2.0;
 var SPRITE_RIGHT = x + abs(sprite_width) / 2.0;
 if key_spell1 and mana >= spell1cost{
     // Moving left
-	if facing == FacingDirection.Left {
+	if facing == cFacingDirection.Left {
         spawn_spell1(player_id,character_id, SPRITE_LEFT, SPRITE_V_CENTER, -BULLET_SPEED);
 	}
     // Moving right
@@ -132,7 +120,7 @@ if key_spell1 and mana >= spell1cost{
 //SPELL 2
 else if key_spell2 and mana >= spell2cost{
 	// Moving left
-	if facing == FacingDirection.Left {
+	if facing == cFacingDirection.Left {
         spawn_spell2(player_id,character_id, SPRITE_LEFT, SPRITE_V_CENTER, -BULLET_SPEED);
 	}
     // Moving right
@@ -154,7 +142,7 @@ else if key_spell3 and mana >= spell3cost{
 	}
 	mana -= spell3cost;
 	// Moving left
-	if facing == FacingDirection.Left {
+	if facing == cFacingDirection.Left {
         spawn_spell3(player_id, character_id,SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
 		//if orange
 		if(character_id == 4){

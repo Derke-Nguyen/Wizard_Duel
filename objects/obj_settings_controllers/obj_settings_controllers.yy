@@ -1,38 +1,38 @@
 {
-    "id": "c011e691-0a8b-4311-afae-1e3a5ef7e00e",
+    "id": "2c3c456a-df52-4b7e-94e8-9b511133001e",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_player",
+    "name": "obj_settings_controllers",
     "eventList": [
         {
-            "id": "4b76ba3b-fe84-4ba2-b7d2-4feb862cb514",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "c011e691-0a8b-4311-afae-1e3a5ef7e00e"
-        },
-        {
-            "id": "1b8261de-7c47-4f3a-9a30-7b97aa565f36",
+            "id": "e5b22542-de05-44fe-9801-9723965923f2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "c011e691-0a8b-4311-afae-1e3a5ef7e00e"
+            "m_owner": "2c3c456a-df52-4b7e-94e8-9b511133001e"
         },
         {
-            "id": "2def0cac-94ef-48d2-9e89-4e220c65d0b9",
+            "id": "70e02a73-3f9e-4b05-ac99-3376da68daf4",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "2c3c456a-df52-4b7e-94e8-9b511133001e"
+        },
+        {
+            "id": "9a1019f9-b89c-45ba-9da3-d61666148f95",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
             "eventtype": 8,
-            "m_owner": "c011e691-0a8b-4311-afae-1e3a5ef7e00e"
+            "m_owner": "2c3c456a-df52-4b7e-94e8-9b511133001e"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -49,36 +49,7 @@
     "physicsRestitution": 0.1,
     "physicsSensor": false,
     "physicsShape": 1,
-    "physicsShapePoints": [
-        {
-            "id": "da51055a-db6b-4933-b220-a84e10394d95",
-            "modelName": "GMPoint",
-            "mvc": "1.0",
-            "x": 0,
-            "y": 0
-        },
-        {
-            "id": "58aa6e69-16ae-4196-b293-e4dab7e6195d",
-            "modelName": "GMPoint",
-            "mvc": "1.0",
-            "x": 32,
-            "y": 0
-        },
-        {
-            "id": "3faedd2a-8871-468a-a552-9829eba0762a",
-            "modelName": "GMPoint",
-            "mvc": "1.0",
-            "x": 32,
-            "y": 32
-        },
-        {
-            "id": "591a2432-3e85-4eeb-871e-5ea415d09fdf",
-            "modelName": "GMPoint",
-            "mvc": "1.0",
-            "x": 0,
-            "y": 32
-        }
-    ],
+    "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
