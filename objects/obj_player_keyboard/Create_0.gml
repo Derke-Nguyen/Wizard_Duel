@@ -42,24 +42,13 @@ player_id = 0; // Set by each player subobject
 BULLET_SPEED = 20;
 
 // May be set by each player subobject
-if(!usingcontroller){
-	LEFT_KEY = vk_left;
-	RIGHT_KEY = vk_right;
-	JUMP_KEY = vk_up;
-	FAST_FALL_KEY = vk_down;
-	SPELL1_KEY = ord("Z");
-	SPELL2_KEY = ord("X");
-	SPELL3_KEY = ord("C");
-}
-if(usingcontroller){
-	LEFT_KEY = gp_padl;
-	RIGHT_KEY = gp_padr;
-	JUMP_KEY = gp_face4;
-	FAST_FALL_KEY = gp_padd;
-	SPELL1_KEY = gp_face3;
-	SPELL2_KEY = gp_face1;
-	SPELL3_KEY = gp_face2;
-}
+LEFT_KEY = vk_left;
+RIGHT_KEY = vk_right;
+JUMP_KEY = vk_up;
+FAST_FALL_KEY = vk_down;
+SPELL1_KEY = ord("Z");
+SPELL2_KEY = ord("X");
+SPELL3_KEY = ord("C");
 
 //SPELL COSTS
 spell1cost = 1;

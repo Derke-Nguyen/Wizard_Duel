@@ -18,15 +18,17 @@ menu_item_height = font_get_size(fMenu);
 menu_committed = -1;
 menu_control = true;
 
-if(!gl_player2controller){
-	menu[4] = "Player 2: Keyboard Monkey";
-}
-if(gl_player2controller){
-	menu[4] = "Player 2: Controller Hog";
-}
-menu[3] = "something";
-menu[2] = "Sound: On";
-menu[1] = "Music: On";
+menu[4] = "Number of Characters: " + string(gl_numberofcharacters);
+menu[3] = "Controllers";
+if(gl_sound)
+		menu[2] = "Sound: On";
+	else
+		menu[2] = "Sound: Off";
+if(gl_music)
+		menu[1] = "Music On";
+	else
+		menu[1] = "Music: Off";
+		
 menu[0] = "Back";
 
 menu_items = array_length_1d(menu);
@@ -38,3 +40,10 @@ up[1] = ord("W");
 
 down[0] = vk_down;
 down[1] = ord("S");
+
+left[0] = vk_left;
+left[1] = ord("A");
+
+right[0] = vk_right;
+right[1] = ord("D");
+
