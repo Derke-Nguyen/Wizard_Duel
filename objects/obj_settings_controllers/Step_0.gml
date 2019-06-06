@@ -41,21 +41,21 @@ if(menu_control){
 	
 	//refreshes display
 	if(gl_player1controller)
-		controllers[4] = "Player 1: Controller";
+		controllers[1] = "Player 1: Controller";
 	else
-		controllers[4] = "Player 1: Keyboard";
+		controllers[1] = "Player 1: Keyboard";
 	if(gl_player2controller)
-		controllers[3] = "Player 2: Controller";
+		controllers[2] = "Player 2: Controller";
 	else
-		controllers[3] = "Player 2: Keyboard";
+		controllers[2] = "Player 2: Keyboard";
 	if(gl_player3controller)
-		controllers[2] = "Player 3: Controller";
+		controllers[3] = "Player 3: Controller";
 	else
-		controllers[2] = "Player 3: Keyboard";
+		controllers[3] = "Player 3: Keyboard";
 	if(gl_player4controller)
-		controllers[1] = "Player 4: Controller";
+		controllers[4] = "Player 4: Controller";
 	else
-		controllers[1] = "Player 4: Keyboard";
+		controllers[4] = "Player 4: Keyboard";
 	
 	//go back to main screen
 	if(keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0,gp_face3)){

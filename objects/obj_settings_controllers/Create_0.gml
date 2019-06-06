@@ -18,29 +18,27 @@ menu_control = true;
 
 controllers[0] = "Back";
 for(var i = 2; i <= gl_numberofcharacters; i++){
-	if(i == 1){
-		if(gl_player1controller)
-			controllers[4] = "Player 1: Controller";
-		else
-			controllers[4] = "Player 1: Keyboard";
-	}
 	if(i == 2){
 		if(gl_player1controller)
-			controllers[3] = "Player 2: Controller";
+			controllers[1] = "Player 1: Controller";
 		else
-			controllers[3] = "Player 2: Keyboard";
+			controllers[1] = "Player 1: Keyboard";
+		if(gl_player1controller)
+			controllers[2] = "Player 2: Controller";
+		else
+			controllers[2] = "Player 2: Keyboard";
 	}
 	if(i == 3){
 		if(gl_player3controller)
-			controllers[2] = "Player 3: Controller";
+			controllers[3] = "Player 3: Controller";
 		else
-			controllers[2] = "Player 3: Keyboard";
+			controllers[3] = "Player 3: Keyboard";
 	}
 	if(i == 4){
 		if(gl_player4controller)
-			controllers[1] = "Player 4: Controller";
+			controllers[4] = "Player 4: Controller";
 		else
-			controllers[1] = "Player 4: Keyboard";
+			controllers[4] = "Player 4: Keyboard";
 	}
 
 }

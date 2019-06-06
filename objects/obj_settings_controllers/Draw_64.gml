@@ -8,7 +8,7 @@ draw_set_valign(fa_bottom);
 var OFFSET = 2;
 
 //FOR EACH OPTION
-for(var i = 0; i< menu_items; ++i){
+for(var i = 0; i <menu_items; i++){
 	var txt = controllers[i];
 	//IF THIS OPTION IS CURRENT SELECTED
 	if(menu_cursor == i){

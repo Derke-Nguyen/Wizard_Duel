@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(player != 2 || !gl_player2controller){
+if(!confirm){
 	if(keyboard_check_pressed(LEFT_KEY)){
 		left = true;
 	}
@@ -8,16 +8,6 @@ if(player != 2 || !gl_player2controller){
 	if(keyboard_check_pressed(RIGHT_KEY)){
 		right = true;
 	}
-}
-
-if(player == 2 && gl_player2controller){
-	if(gamepad_button_check_pressed(0,LEFT_KEY)){
-		left = true;
-		}
-	}
-
-	if(gamepad_button_check_pressed(0,RIGHT_KEY)){
-		right = true;
 }
 
 if(left){
@@ -37,7 +27,9 @@ right = false;
 left = false;
 image_index = index-1;
 
-if(keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) || gamepad_button_check(0,gp_face3)){
-	//set player;
+if(keyboard_check_pressed(CONFIRM_KEY)){
 	set_player(player, index);
+	obj_playerselectcontroller.numofplayers++;
+	confirm = true;
+	image_alpha = 0.5;
 }
