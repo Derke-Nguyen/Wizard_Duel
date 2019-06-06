@@ -4,10 +4,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 event_inherited();
-player = 2;
-LEFT_KEY = vk_left;
-RIGHT_KEY= vk_right;
-CONFIRM_KEY = vk_numpad1;
+player = 3;
+LEFT_KEY = ord("C");
+RIGHT_KEY= ord("B");
+CONFIRM_KEY = ord("N");
 
-index = 2;
-image_xscale = -1;
+index = 3;
