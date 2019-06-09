@@ -32,8 +32,7 @@ else{
 
 switch character_id {
     case 1:
-		var fireball_id = instance_create_depth(originx, originy, 0, obj_spell_simpleprojectile);
-        fireball_id.sprite_index = spr_fireball;
+		var fireball_id = instance_create_depth(originx, originy, 0, obj_spell_fireball);
 		fireball_id.player_id = player_id;
 		fireball_id.character_id = 1;
 		fireball_id.hspeed = hsp;
@@ -41,8 +40,7 @@ switch character_id {
 		fireball_id.image_xscale = -1;
 		}
         break;
-    case 2:var arrow_id = instance_create_depth(originx, originy, 0, obj_spell_simpleprojectile);
-        arrow_id.sprite_index = spr_arrow;
+    case 2: var arrow_id = instance_create_depth(originx, originy, 0, obj_spell_arrow);
 		arrow_id.player_id = player_id;
 		arrow_id.character_id = 2;
 		arrow_id.hspeed = hsp;

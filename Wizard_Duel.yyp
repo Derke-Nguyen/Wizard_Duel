@@ -290,7 +290,7 @@
             "Key": "50c1fe87-a98f-4381-bc19-d00cb86ab884",
             "Value": {
                 "id": "82f1d0f5-4689-4c4c-b013-08b3d251f9ef",
-                "resourcePath": "objects\\obj_spell_simpleprojectile\\obj_spell_simpleprojectile.yy",
+                "resourcePath": "objects\\obj_spell_fireball\\obj_spell_fireball.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -700,6 +700,14 @@
                 "id": "3e8ad86d-80b2-4407-ac79-5ea83d94c50d",
                 "resourcePath": "sprites\\spr_orange\\spr_orange.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c8aad53d-d1c2-4a86-b4a4-82366ddd3f83",
+            "Value": {
+                "id": "f3a75c0a-6282-4369-bf43-d4f874f75f7c",
+                "resourcePath": "objects\\obj_spell_arrow\\obj_spell_arrow.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -1,4 +1,4 @@
-obj_player = obj_player1;
+obj_player = obj_player_keyboard;
 
 draw_health_ = 0;
 colhp1 = $3439E2;

@@ -153,11 +153,6 @@ else if key_spell3 and mana >= spell3cost{
     // Moving right
 	else {
 		spawn_spell3(player_id, character_id,SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
-		//if orange
-		if(character_id == 4){
-			x += 100
-			ultcastdelay = 0;
-		}
 	}
     
 	
@@ -166,13 +161,6 @@ else if key_spell3 and mana >= spell3cost{
 if(ultcastdelay != 0)
 	ultcastdelay--;
 
-//orange move fast spell
-if(speedchangedelay > 0){
-	speedchangedelay--;
-}
-else{
-	movespeed = 10;
-}
 // Invincibility Stuff
 if iframe > 0 {
 	iframe--;
