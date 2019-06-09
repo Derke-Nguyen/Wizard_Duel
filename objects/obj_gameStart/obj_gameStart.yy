@@ -5,16 +5,6 @@
     "name": "obj_gameStart",
     "eventList": [
         {
-            "id": "4be75a5a-f9a6-4200-ac14-4ee0dd1d2cd9",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 2,
-            "eventtype": 7,
-            "m_owner": "0cc6b860-03fa-4dc3-9ff8-964b66272fd7"
-        },
-        {
             "id": "007971f6-754b-4994-894c-d384e6880e83",
             "modelName": "GMEvent",
             "mvc": "1.0",
