@@ -4,17 +4,17 @@
 // Inherit the parent event
 event_inherited();
 
-LEFT_KEY = ord("A");
-RIGHT_KEY = ord("D");
-JUMP_KEY = ord("W");
-FAST_FALL_KEY = ord("S");
-SPELL1_KEY = ord("R");
-SPELL2_KEY = ord("T");
-SPELL3_KEY = ord("Y");
+LEFT_KEY = ord("C");
+RIGHT_KEY = ord("B");
+JUMP_KEY = ord("F");
+FAST_FALL_KEY = ord("V");
+SPELL1_KEY = ord("N");
+SPELL2_KEY = ord("M");
+SPELL3_KEY = ord(",");
 
-player_id = 1;
+player_id = 3;
 
-character_id = gl_player1character;
+character_id = gl_player3character;
 //setup character
 switch(character_id){
 	case 1: sprite_index = spr_red;
