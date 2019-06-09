@@ -27,7 +27,7 @@ mana = 10;
 iframe = 0;
 ultcastdelay = 0;
 speedchangedelay = 20;
-movespeed = 10;
+movespeed = 5;
 
 enum FacingDirection {
     Left,

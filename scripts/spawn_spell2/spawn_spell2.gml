@@ -21,21 +21,14 @@ var hsp = argument4;
 var originx = x_pos;
 var originy = y_pos;
 
-if(hsp < 0){
-	originx -= 3;
-}
-else{
-	originy += 3;
-}
-
 switch character_id{
 	//red wizard
 	case 1: 
 	if(hsp < 0){
-		originx -= 10;
+		originx -= 13;
 	}
 	else{
-		originx += 10;
+		originx += 13;
 	}
 	if(!instance_exists(obj_spell_explosion)){
 		var fireball_id = instance_create_depth(originx, originy, -100, obj_spell_explosion);
@@ -50,18 +43,8 @@ switch character_id{
 	break;
 	//blue wizard
 	case 2: //shield thingy
-	if(hsp < 0){
-		originx -= 10;
-	}
-	else{
-		originx += 10;
-	}
 	var shield_id = instance_create_depth(originx, originy, 0, obj_spell_shield);
 	shield_id.player_id = player_id;
-	if(hsp < 0){
-		shield_id.image_xscale = -1;
-	}
-	id.mana += 2;
 	break;
 	case 3:
 		var ground_level = y;
