@@ -5,9 +5,11 @@
 // TODO: smoother transitions?
 // RETURNS - no clue
 
+var winner = argument0;
 
-gl_winner_id = argument0;
-gl_winner_char = argument1;
+
+gl_winner_id = winner.player_id;
+gl_winner_char = winner.character_id;
 
 room_goto(rms_gameover);
 
