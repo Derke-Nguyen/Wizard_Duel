@@ -171,11 +171,7 @@ if iframe < 0 {
 // Flicker while in invicibility frames
 image_alpha = (iframe % 2) ? 0.5 : 1;
 
-// Game end transition
 
-if playerHealth <= 0 {
-	gameover_transition(player_id, character_id);
-}
 
 // COLLISION CODE
 // This code does the following things
