@@ -38,7 +38,7 @@ switch character_id{
 	break;
 	//blue wizard
 	case 2: //NULL
-		var shield_id = instance_create_depth(x_pos, y_pos, 0, obj_spell_null);
+		var shield_id = instance_create_depth(x_pos, y_pos, 0, obj_spell_stasis);
 		shield_id.player_id = player_id;
 		id.mana += 4;
 	break;
