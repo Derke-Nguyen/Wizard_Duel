@@ -39,7 +39,7 @@ facing = FacingDirection.Left;
 player_id = 0; // Set by each player subobject
 
 // hsp of bullets when fired
-BULLET_SPEED = 20;
+BULLET_SPEED = 15;
 
 // May be set by each player subobject
 LEFT_KEY = vk_left;
