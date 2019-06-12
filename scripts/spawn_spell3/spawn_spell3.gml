@@ -52,7 +52,7 @@ switch character_id{
 			drain_id.image_yscale = room_height / 64;
 			id.slowed_time = 25;
 	break;
-	case 4: //overridden in the player
+	case 4: //it's a state of being so no spell is spawned
 	break;
 }
 

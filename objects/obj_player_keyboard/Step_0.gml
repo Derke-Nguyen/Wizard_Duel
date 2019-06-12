@@ -11,7 +11,6 @@ else{
 //exception made for purple
 if(slowed_time > 0){
 	slowed_time--;
-	movespeed_scale = 0.5;
 }
 else{
 	movespeed_scale = 1;
@@ -105,7 +104,7 @@ var SPRITE_V_CENTER = y;
 // if image_xscale is negative (which is annoying)
 var SPRITE_LEFT = x - abs(sprite_width) / 2.0;
 var SPRITE_RIGHT = x + abs(sprite_width) / 2.0;
-if key_spell1 and mana >= spell1cost{
+if key_spell1 and mana >= spell1cost and spell1cd == 0{
     // Moving left
 	if facing == FacingDirection.Left {
         spawn_spell1(player_id, character_id, SPRITE_LEFT, SPRITE_V_CENTER, -BULLET_SPEED);
@@ -114,11 +113,21 @@ if key_spell1 and mana >= spell1cost{
 	else {
 		spawn_spell1(player_id, character_id, SPRITE_RIGHT, SPRITE_V_CENTER, BULLET_SPEED);
 	}
+	switch(character_id){
+	case 1: spell1cd = 20;
+	break;
+	case 2: spell1cd = 15;
+	break;
+	case 3: spell1cd = 15;
+	break;
+	case 4: spell1cd = 30;
+	break;
+	}
     mana -= spell1cost;
 }
 
 //SPELL 2
-else if key_spell2 and mana >= spell2cost{
+else if key_spell2 and mana >= spell2cost and spell2cd == 0{
 	// Moving left
 	if facing == FacingDirection.Left {
         spawn_spell2(player_id, character_id, SPRITE_LEFT, SPRITE_V_CENTER, -BULLET_SPEED);
@@ -132,44 +141,70 @@ else if key_spell2 and mana >= spell2cost{
 		movespeed = 20;
 		speedchangedelay = 40;
 	}
+	switch(character_id){
+	case 1: spell2cd = 50;
+	break;
+	case 2: spell2cd = 50;
+	break;
+	case 3: spell2cd = 50;
+	break;
+	case 4: spell2cd = 20;
+	break;
+	}
     mana -= spell2cost;
 }
 
 //SPELL 3
-else if key_spell3 and mana >= spell3cost{
+else if key_spell3 and mana >= spell3cost and spell3cd == 0{
 	if(character_id == 1){
-		ultcastdelay = 60;
+		ultdelay = 60;
 	}
 	mana -= spell3cost;
 	// Moving left
 	if facing == FacingDirection.Left {
         spawn_spell3(player_id, character_id,SPRITE_LEFT - 3, SPRITE_V_CENTER, -BULLET_SPEED);
-		//if orange
-		if(character_id == 4){
-			x -= 100;
-			ultcastdelay = 0;
-		}
 	}
     // Moving right
 	else {
 		spawn_spell3(player_id, character_id,SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
 	}
-    
-	
+    switch(character_id){
+	case 1: spell3cd = 20;
+	break;
+	case 2: spell3cd = 60;
+	break;
+	case 3: spell3cd = 50;
+	break;
+	case 4: spell3cd = 20;
+			iframe = 15; //maker orange be like full orange or something
+	break;
+	}
 }
 
-if(ultcastdelay != 0)
-	ultcastdelay--;
+if(ultdelay != 0)
+	ultdelay--;
+
+//cooldowns
+if(spell1cd != 0)
+	spell1cd--;
+
+if(spell2cd != 0)
+	spell2cd--;
+
+if(spell3cd != 0)
+	spell3cd--;
 
 // Invincibility Stuff
-if iframe > 0 {
+if iframe != 0 {
 	iframe--;
 }
-if iframe < 0 {
-	iframe++;
+else{
+	damaged = false;
 }
-// Flicker while in invicibility frames
-image_alpha = (iframe % 2) ? 0.5 : 1;
+
+
+// Flicker while in invicibility frames AND damaged
+image_alpha = (iframe % 2 and damaged) ? 0.5 : 1;
 
 
 

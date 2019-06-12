@@ -1,5 +1,6 @@
 //exception made for red
 charging = false;
+ultdelay = 0;
 
 //exception made for purple
 slowed_time = 0;
@@ -11,6 +12,7 @@ c_first_jump_power = 11;
 c_second_jump_power = 7;
 c_max_health = 10;
 c_max_mana = 10;
+movespeed = 5;
 
 //CONTROLLER
 usingcontroller = false;
@@ -25,9 +27,13 @@ jumps = 2;
 playerHealth = 10;
 mana = 10;
 iframe = 0;
-ultcastdelay = 0;
 speedchangedelay = 20;
-movespeed = 5;
+movespeed_scale = 1;
+damaged = false;
+
+spell1cd = 0;
+spell2cd = 0;
+spell3cd = 0;
 
 enum FacingDirection {
     Left,
@@ -51,6 +57,25 @@ SPELL2_KEY = ord("X");
 SPELL3_KEY = ord("C");
 
 //SPELL COSTS
-spell1cost = 1;
-spell2cost = 3;
-spell3cost = 5;
+switch(character_id){
+case 1:
+	spell1cost = 1;
+	spell2cost = 3;
+	spell3cost = 4;
+break;
+case 2:
+	spell1cost = 1;
+	spell2cost = 2;
+	spell3cost = 5;
+break;
+case 3:
+	spell1cost = 2;
+	spell2cost = 1;
+	spell3cost = 3;
+break;
+case 4:
+	spell1cost = 0;
+	spell2cost = 2;
+	spell3cost = 2;
+break;
+}
