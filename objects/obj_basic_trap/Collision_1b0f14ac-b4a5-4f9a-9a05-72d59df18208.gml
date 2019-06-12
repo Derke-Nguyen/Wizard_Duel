@@ -5,5 +5,6 @@ if(other.player_id != player_id){
 		other.playerHealth--;
 		if(other.iframe == 0)
 			other.iframe = 30;
+			other.damaged = true;
 	}
 }

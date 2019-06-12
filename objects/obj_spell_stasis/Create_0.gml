@@ -1,3 +1,3 @@
 /// @description sets how many frames this spell will last
 
-timealive = 8;
+timealive = 240;
