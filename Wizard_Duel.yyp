@@ -498,7 +498,7 @@
             "Key": "93ba8e64-e2b0-47dd-8678-653aec6a7d58",
             "Value": {
                 "id": "19b71b2a-1a80-4c99-a708-93e984e557c1",
-                "resourcePath": "sprites\\spr_LASER\\spr_LASER.yy",
+                "resourcePath": "sprites\\spr_LASER_right\\spr_LASER_right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -612,6 +612,14 @@
                 "id": "d26e6c0e-4b23-4d2e-adb8-f5be310166c6",
                 "resourcePath": "views\\aeef20db-f917-4449-81be-d27af7af2d84.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "af748934-b507-4407-9447-e9db66fbdc5d",
+            "Value": {
+                "id": "a3d4ff12-de50-43e5-88a0-0b158798d949",
+                "resourcePath": "sprites\\spr_LASER_left\\spr_LASER_left.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

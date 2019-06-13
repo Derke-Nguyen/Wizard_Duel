@@ -23,18 +23,17 @@ switch character_id{
 	//red wizard
 	case 1: //LAZOR
 		if(facing){
+			object_set_sprite(obj_spell_LASER, spr_LASER_right);
 			var laser_id = instance_create_depth(x, y, 0, obj_spell_LASER);
-			sprite_set_offset(spr_LASER, 0, 32);
-			laser_id.direction = 0;
 		}
 		else{
+			object_set_sprite(obj_spell_LASER, spr_LASER_left);
 			var laser_id = instance_create_depth(x, y, 0, obj_spell_LASER);
-			sprite_set_offset(spr_LASER, 64, 32);
-			laser_id.direction = 180;
 		}
 		laser_id.player_id = player_id;
 		laser_id.player_creator = id;
 		laser_id.facing = facing;
+		id.charging = true;
 	break;
 	//blue wizard
 	case 2: //NULL

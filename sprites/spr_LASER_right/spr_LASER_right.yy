@@ -2,7 +2,7 @@
     "id": "93ba8e64-e2b0-47dd-8678-653aec6a7d58",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_LASER",
+    "name": "spr_LASER_right",
     "For3D": false,
     "HTile": false,
     "VTile": false,

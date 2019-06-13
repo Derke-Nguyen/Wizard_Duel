@@ -23,9 +23,11 @@ if(image_index > laser_firing)
 if(image_index >= laser_ending){
 	instance_destroy(id, false);
 }
-
-player_creator.x = clamp(player_creator.x, x, x);
+if(facing)
+	player_creator.x = clamp(player_creator.x, x, x);
+else
+	player_creator.x = clamp(player_creator.x, x, x);
 player_creator.y = clamp(player_creator.y, y, y);
-player_creator.x = clamp(player_creator.x, 0, room_width);
+
 player_creator.facing = facing;
 

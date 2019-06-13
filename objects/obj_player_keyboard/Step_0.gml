@@ -3,6 +3,9 @@ if(instance_exists(obj_spell_LASER)){
 	if (obj_spell_LASER.player_creator == id){
 		charging = true;
 	}
+	else{
+		charging = false;
+	}
 }
 else{
 	charging = false;
