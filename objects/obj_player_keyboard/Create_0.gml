@@ -1,6 +1,5 @@
 //exception made for red
 charging = false;
-ultdelay = 0;
 
 //exception made for purple
 slowed_time = 0;

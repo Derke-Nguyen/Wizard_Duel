@@ -172,7 +172,7 @@ else if key_spell3 and mana >= spell3cost and spell3cd == 0{
 		spawn_spell3(player_id, character_id,SPRITE_RIGHT + 3, SPRITE_V_CENTER, BULLET_SPEED);
 	}
     switch(character_id){
-	case 1: spell3cd = 20;
+	case 1: spell3cd = 180;
 	break;
 	case 2: spell3cd = 60;
 	break;
@@ -183,9 +183,6 @@ else if key_spell3 and mana >= spell3cost and spell3cd == 0{
 	break;
 	}
 }
-
-if(ultdelay != 0)
-	ultdelay--;
 
 //cooldowns
 if(spell1cd != 0)
