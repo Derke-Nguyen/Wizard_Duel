@@ -12,8 +12,8 @@ inputs[6] = vk_numpad3; //spell3
 ground_acceleration = 1.5;
 ground_deceleration = 4;
 run_speed = 12;
-air_acceleration = 1.25;
-air_deceleration = 0.25;
+air_acceleration = 2;
+air_deceleration = 1.25;
 air_speed = 12;
 jump_speed = 20;
 

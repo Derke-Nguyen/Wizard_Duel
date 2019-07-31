@@ -13,8 +13,9 @@ sprite_index = sPlayer;
 hspd = 0;
 vspd = 0;
 
-if(down_key){
-	//player fall fast
+if(down_key && place_meeting(x,y+1, obj_OneWayPlatform)){
+	y++;
+	StateSwitch(PLAYER_STATES.air);
 }
 
 if(right_key){
@@ -30,12 +31,7 @@ if(left_key){
 }
 
 if(up_key){
-	if(down_key && place_meeting(x,y+1, obj_OneWayPlatform)){
-		y++;
-	}
-	else{
-		vspd = -jump_speed;
-	}
+	vspd = -jump_speed;
 	//audio_play_sound(snd_PlayerJump, 1, false);
 	StateSwitch(PLAYER_STATES.air);
 }
