@@ -30,6 +30,9 @@ switch(GLOBAL_PLAYER_1_TYPE){
 	case COLOR.purple:
 		player1 = instance_create_layer(960, 540, "Player", obj_Purple);
 	break;
+	default:
+		player1 = instance_create_layer(960, 540, "Player", obj_Player);
+	break;
 };
 switch(GLOBAL_PLAYER_2_TYPE){
 	case COLOR.red:
@@ -43,6 +46,9 @@ switch(GLOBAL_PLAYER_2_TYPE){
 	break;
 	case COLOR.purple:
 		player2 = instance_create_layer(960, 540, "Player", obj_Purple);
+	break;
+	default:
+		player2 = instance_create_layer(960, 540, "Player", obj_Player);
 	break;
 };
 

@@ -2,6 +2,7 @@
 
 //PlayerSettings
 enum COLOR{
+	none,
 	red,
 	blue,
 	orange,
@@ -9,10 +10,10 @@ enum COLOR{
 };
 
 globalvar GLOBAL_PLAYER_1_TYPE;
-GLOBAL_PLAYER_1_TYPE = COLOR.red;
+GLOBAL_PLAYER_1_TYPE = COLOR.none;
 
 globalvar GLOBAL_PLAYER_2_TYPE;
-GLOBAL_PLAYER_2_TYPE = COLOR.blue;
+GLOBAL_PLAYER_2_TYPE = COLOR.none;
 
 //Display
 resolution = "1080p";
