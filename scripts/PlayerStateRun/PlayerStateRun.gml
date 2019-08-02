@@ -14,7 +14,7 @@ if(image_index == round(image_index)){
 	//scr_sound_player_step();
 }
 
-sprite_index = sPlayerRun;
+sprite_index = SPRITE_PLAYER_RUN;
 
 //Run
 if (right_key) {
@@ -52,11 +52,6 @@ if (!right_key && !left_key || right_key && left_key) {
 	if (sign(hspd) == -1 && hspd > -ground_deceleration) {
 		hspd = 0;
 	}
-	
-	// Can switch to down key while decelerating so it doesn't feel delayed
-	if (down_key) {
-		//fastfall
-	}
 }
 
 // HORIZONTAL
@@ -89,4 +84,4 @@ if (up_key) {
 	StateSwitch(PLAYER_STATES.air);
 }
 
-//PlayerAttack();
+PlayerCast();

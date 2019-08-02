@@ -4,7 +4,7 @@ if(state_timer == 1){
 	UseBufferedInput();
 }
 
-sprite_index = sPlayerJump;
+sprite_index = SPRITE_PLAYER_JUMP;
 
 //Gravity
 if(vspd <= vterminal){
@@ -52,8 +52,6 @@ if (!right_key && !left_key || right_key && left_key) {
 }
 
 if(up_key){
-	//maybe flash jump
-	
 	//Buffered Jump / if add flashjump add if 
 	jump_buffer_timer = jump_buffer_timer_max;
 }
@@ -94,4 +92,4 @@ PlatformCollisions(true);
 
 y += vspd;
 
-//PlayerAttack();
+PlayerCast();

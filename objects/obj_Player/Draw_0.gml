@@ -1,5 +1,4 @@
-/*
-if (flash_white || state_current == PLAYER_STATES.hurt_lag) {
+if (flash_white || state_current == PLAYER_STATES.hurtlag) {
 	shader_set(shWhite);
 }
 
@@ -10,7 +9,7 @@ if (invincible > 0) {
 } else {
 	flash_white = false;
 }
-*/
+
 draw_self();
 
 shader_reset();

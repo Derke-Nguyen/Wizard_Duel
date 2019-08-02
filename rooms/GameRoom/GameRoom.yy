@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "GameRoom",
     "id": "5bbb4ee4-6945-4b7a-bf21-df8ae83fd753",
     "creationCodeFile": "",
     "inheritCode": false,
@@ -8,7 +8,6 @@
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "7463e4d9-f727-42cc-be20-865b6dc72010",
-        "c438bb24-3927-4a38-bc25-d2073329b571",
         "5243d5e9-9c97-4b5e-9e80-36a77a5fd877",
         "efae43f1-5959-4b90-bca8-8e294feb0d79",
         "731da446-9175-4029-8d64-790b5243ff53",
@@ -84,7 +83,33 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_1360AFA6","id": "c438bb24-3927-4a38-bc25-d2073329b571","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1360AFA6","objId": "619052c6-e0ae-48c0-a90a-e3a0a73130ed","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 544,"y": 64}
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "PlayerSkillEffects",
+            "id": "2cc93cd9-1861-4b9d-ac8b-7c00f787558d",
+            "depth": 300,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
             ],
             "layers": [
 
@@ -100,7 +125,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Solid",
             "id": "7124a9f5-1fcb-46cc-975d-6351e03da9ec",
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -134,7 +159,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

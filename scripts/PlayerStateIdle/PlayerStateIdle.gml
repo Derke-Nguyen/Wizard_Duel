@@ -9,7 +9,7 @@ if(state_timer == 1){
 	}
 }
 
-sprite_index = sPlayer;
+sprite_index = SPRITE_PLAYER_IDLE;
 hspd = 0;
 vspd = 0;
 
@@ -36,4 +36,4 @@ if(up_key){
 	StateSwitch(PLAYER_STATES.air);
 }
 
-//PlayerAttack();
+PlayerCast();
