@@ -122,7 +122,7 @@
             "Key": "47a8cdf6-733a-46a6-83b0-e0b8e8068db2",
             "Value": {
                 "id": "6d4f259d-1d2c-4c06-9308-d12745559e8a",
-                "resourcePath": "scripts\\PlayerStateSpell2\\PlayerStateSpell2.yy",
+                "resourcePath": "scripts\\StrongProjectileCast\\StrongProjectileCast.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -130,7 +130,7 @@
             "Key": "4b1a68cf-e597-486f-b2a6-a53bd359d78a",
             "Value": {
                 "id": "6697684b-7252-41dd-8c80-1ad933e9d85c",
-                "resourcePath": "scripts\\PlayerStateSpell3\\PlayerStateSpell3.yy",
+                "resourcePath": "scripts\\SelfCast\\SelfCast.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -204,6 +204,14 @@
                 "id": "7f8468d7-65c5-4087-b13f-b6eb5aae75df",
                 "resourcePath": "views\\620e2cb3-3e58-4d88-8ce3-d35c3e5b331e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6664816d-a9a4-4538-b86d-19ddc4adf753",
+            "Value": {
+                "id": "b2bcef47-8976-48a6-bc2e-40b18b71436f",
+                "resourcePath": "scripts\\PlayerCast\\PlayerCast.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -418,7 +426,7 @@
             "Key": "c1081a05-af2d-4c82-84a4-f1c598ce8a16",
             "Value": {
                 "id": "72d50a6d-f8e4-4eae-93f1-89277f176ad8",
-                "resourcePath": "scripts\\PlayerStateSpell1\\PlayerStateSpell1.yy",
+                "resourcePath": "scripts\\WeakProjectileCast\\WeakProjectileCast.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -551,6 +559,7 @@
         "51c120b0-da38-455a-aac6-ae0757352526",
         "3af6a74c-2b34-4f73-ac5a-daaa5fbd8139",
         "43d92f33-ebb6-4a69-a757-b2fd2602b632",
+        "6664816d-a9a4-4538-b86d-19ddc4adf753",
         "78d4ad82-1ea5-4b43-b34b-647b9b1ff210",
         "a3fa9cb2-76e2-43a0-ab28-da6414acc11c",
         "2285359b-8dbf-4f35-a75e-539ee4619e8e"

@@ -30,7 +30,26 @@ mp_current = mp_max;
 
 //Spells
 
+weak_projectile_hitbox_state_frame = 5;
+weak_projectile_hitbox_frames = 6;
+var _weak_projectile_end_lag = 0;
+weak_projectile_state_frames = weak_projectile_hitbox_state_frame + weak_projectile_hitbox_frames + _weak_projectile_end_lag;
+weak_projectile_state_timer = 0;
+weak_hit_lag = 5;
 
+strong_projectile_hitbox_start_frame = 8;
+strong_projectile_hitbox_frames = 4;
+strong_projectile_frames_between_hits = 4;
+strong_projectile_hits = 3;
+var _strong_projectile_end_lag = 0;
+strong_projectile_state_frames = strong_projectile_hitbox_start_frame + strong_projectile_attack_frames_between_hits = _strong_attack_end_lag -1;
+strong_projectile_state_timer = 0;
+strong_hit_lag = 3;
+
+strong_proejctile_charge = 0;
+strong_projectile_charge_max = 3;
+
+self_cast_used = false;
 
 //Misc
 
@@ -54,9 +73,9 @@ enum PLAYER_STATES{
 	idle,
 	air,
 	run,
-	spell1,
-	spell2,
-	spell3,
+	weakprojectile,
+	strongprojectile,
+	selfcast,
 	hitlag,
 	hurtlag
 };
@@ -68,5 +87,13 @@ enum INPUTS{
 	spell3
 }
 
+enum COLOR{
+	red,
+	blue,
+	orange,
+	purple
+};
+
+color_current = COLOR.red;
 state_current = PLAYER_STATES.air;
 state_timer = 0;

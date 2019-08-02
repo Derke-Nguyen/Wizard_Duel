@@ -15,16 +15,16 @@ if(object_index == obj_Player){
 			PlayerStateAir();
 			break;
 		
-		case PLAYER_STATES.spell1:
-			PlayerStateSpell1();
+		case PLAYER_STATES.weakprojectile:
+			WeakProjectileCast();
 			break;
 		
-		case PLAYER_STATES.spell2:
-			PlayerStateSpell2();
+		case PLAYER_STATES.strongprojectile:
+			StrongProjectileCast();
 			break;
 		
-		case PLAYER_STATES.spell3:
-			PlayerStateSpell3();
+		case PLAYER_STATES.selfcast:
+			SelfCast();
 			break;
 		
 		case PLAYER_STATES.hitlag:

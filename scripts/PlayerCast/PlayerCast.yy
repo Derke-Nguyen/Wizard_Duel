@@ -1,8 +1,8 @@
 {
-    "id": "47a8cdf6-733a-46a6-83b0-e0b8e8068db2",
+    "id": "6664816d-a9a4-4538-b86d-19ddc4adf753",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "PlayerStateSpell2",
+    "name": "PlayerCast",
     "IsCompatibility": false,
     "IsDnD": false
 }
