@@ -1,6 +1,6 @@
 // Description: state_execute() - executes player's current state
 
-if(object_index == obj_Player){
+if(object_index == obj_Player || object_index == obj_Red || object_index == obj_Blue || object_index == obj_Orange || object_index == obj_Purple){
 	
 	switch(state_current){
 		case PLAYER_STATES.idle:

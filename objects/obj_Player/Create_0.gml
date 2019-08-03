@@ -10,11 +10,11 @@ inputs[6] = ord("U"); //spell3
 
 // Movement
 ground_acceleration = 1.5;
-ground_deceleration = 4;
-run_speed = 12;
+ground_deceleration = 3;
+run_speed = 10;
 air_acceleration = 2;
-air_deceleration = 1.25;
-air_speed = 12;
+air_deceleration = 1.2;
+air_speed = 8;
 jump_speed = 20;
 
 vspd = 0;
@@ -70,7 +70,7 @@ enum INPUTS{
 	spell3
 }
 
-color_current = COLOR.red;
+color_current = COLOR.none;
 state_current = PLAYER_STATES.air;
 state_timer = 0;
 
