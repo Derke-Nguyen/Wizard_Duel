@@ -1,4 +1,4 @@
-if (jump_key) {
+if (up_key) {
 	buffered_input = INPUTS.jump;
 }
 

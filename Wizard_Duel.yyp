@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "2893c7b6-3480-4237-a395-b93ce3c8c194",
+            "Value": {
+                "id": "9cbeff06-6c5d-4688-ba4d-24722c9dc56e",
+                "resourcePath": "views\\2893c7b6-3480-4237-a395-b93ce3c8c194.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2a818024-4a1c-4622-9746-e3e3cb1c0362",
             "Value": {
                 "id": "ebb3841c-5efd-4611-a4fc-050f9d4e575a",
@@ -511,6 +519,14 @@
             }
         },
         {
+            "Key": "6e4aeab3-c536-41e8-a6ab-b868af56ca54",
+            "Value": {
+                "id": "d0f399ea-466d-4f9f-94c1-7f2c87e988b0",
+                "resourcePath": "views\\6e4aeab3-c536-41e8-a6ab-b868af56ca54.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "72e5383c-1cbb-4d87-b50f-f7e087fecf54",
             "Value": {
                 "id": "800a56a2-ac78-4a14-bcbe-5551c33ccaf4",
@@ -596,6 +612,14 @@
                 "id": "9642cd24-e284-4df4-95ee-67cc8032add7",
                 "resourcePath": "sprites\\sPlayerStrongProjectile\\sPlayerStrongProjectile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8dc83b79-4100-4420-bfbf-f5ad59a561da",
+            "Value": {
+                "id": "8709aeae-a9b0-4977-8279-7ccb6ab50b61",
+                "resourcePath": "views\\8dc83b79-4100-4420-bfbf-f5ad59a561da.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -759,6 +783,22 @@
             }
         },
         {
+            "Key": "b4aca18e-f050-4d38-bd80-14ff90cf4737",
+            "Value": {
+                "id": "d1fc55d3-fc5c-412d-9af2-58d585182ce1",
+                "resourcePath": "scripts\\BlueCast\\BlueCast.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ba499fe5-472f-4743-a8c2-27af8d573b22",
+            "Value": {
+                "id": "83e10c5d-f0a5-4d7f-965b-7cf8bfc039eb",
+                "resourcePath": "shaders\\shWhite\\shWhite.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "bcd76606-a6da-40b6-a366-09803c370546",
             "Value": {
                 "id": "71d0635a-da8f-4564-8969-3c460d58e08b",
@@ -839,6 +879,14 @@
             }
         },
         {
+            "Key": "cdcd20c3-8374-4cd3-b7c9-8ca6e06ec1a5",
+            "Value": {
+                "id": "2db9096e-ef5c-4ffd-932b-31818272721a",
+                "resourcePath": "views\\cdcd20c3-8374-4cd3-b7c9-8ca6e06ec1a5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d148a1ee-d6f9-4aa1-b16d-8493bb351a1c",
             "Value": {
                 "id": "8de8aa19-7654-4fd1-a30f-950d5d0ead6e",
@@ -895,6 +943,14 @@
             }
         },
         {
+            "Key": "e32fba08-ae3b-4e67-be5e-1a5340967ad9",
+            "Value": {
+                "id": "4dba0abf-91ed-4011-8be9-fc09a3471b31",
+                "resourcePath": "scripts\\RedCast\\RedCast.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e36d9dfc-4b34-4c80-adc7-3eb9e6f823ca",
             "Value": {
                 "id": "f98b69f5-11fd-4f70-9a73-8e18258b3997",
@@ -908,6 +964,14 @@
                 "id": "479084f4-7503-47e2-8be6-1b4824aa37d7",
                 "resourcePath": "sprites\\sPlayerRunPurple\\sPlayerRunPurple.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ea322ef1-27fe-44a8-9590-4577b4efb35f",
+            "Value": {
+                "id": "b400e377-aa54-42bf-8638-520b315f8e68",
+                "resourcePath": "scripts\\PurpleCast\\PurpleCast.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -983,6 +1047,14 @@
             }
         },
         {
+            "Key": "fbd7f243-6590-4e21-88f2-041ab4bd575b",
+            "Value": {
+                "id": "2725ac1d-02d1-4975-9de2-af581ae8db7c",
+                "resourcePath": "scripts\\OrangeCast\\OrangeCast.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fd13215b-c523-4d8c-9fdc-924547ce0dae",
             "Value": {
                 "id": "24162389-5559-4013-b176-52a7ab7b7f48",
@@ -1016,6 +1088,10 @@
         "47a8cdf6-733a-46a6-83b0-e0b8e8068db2",
         "5c905c78-3df0-488f-ad83-33ec0f2eec7b",
         "6664816d-a9a4-4538-b86d-19ddc4adf753",
+        "e32fba08-ae3b-4e67-be5e-1a5340967ad9",
+        "b4aca18e-f050-4d38-bd80-14ff90cf4737",
+        "fbd7f243-6590-4e21-88f2-041ab4bd575b",
+        "ea322ef1-27fe-44a8-9590-4577b4efb35f",
         "3af6a74c-2b34-4f73-ac5a-daaa5fbd8139",
         "43d92f33-ebb6-4a69-a757-b2fd2602b632",
         "78d4ad82-1ea5-4b43-b34b-647b9b1ff210",

@@ -4,7 +4,7 @@ switch (buffered_input) {
 		break;
 		
 	case INPUTS.jump:
-		jump_key = true;
+		up_key = true;
 		break;
 		
 	case INPUTS.spell1:
