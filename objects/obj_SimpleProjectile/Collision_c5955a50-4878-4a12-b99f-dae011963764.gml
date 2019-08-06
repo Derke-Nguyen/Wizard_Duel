@@ -3,7 +3,8 @@
 with(other){
 	if(player_id != other.origin && !invincible && state_current != PLAYER_STATES.hurtlag){
 		hp_current -= other.damage;
-		hkb = other.hkb;
+		//knockback
+		hkb = other.hkb * -image_xscale;
 		vkb = other.vkb;
 		hurt_lag = other.lag;
 	
