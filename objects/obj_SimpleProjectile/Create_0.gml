@@ -4,10 +4,12 @@ alive_time = 0;
 alive_time_max = 100;
 objects_hit = ds_list_create();
 
-//hkb = 5 * obj_Player.image_xscale;
-//vkb = -2;
+//knockback
+hkb = 15;
+vkb = -10;
 
-hspeed = 5;
+hspeed = 20;
+vspeed = 0;
 
 origin = -1;
 
