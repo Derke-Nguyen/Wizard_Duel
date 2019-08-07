@@ -27,10 +27,6 @@ if(object_index == obj_Player || object_index == obj_Red || object_index == obj_
 			SelfCast();
 			break;
 		
-		case PLAYER_STATES.hitlag:
-			PlayerStateHitLag();
-			break;
-		
 		case PLAYER_STATES.hurtlag:
 			PlayerStateHurtLag();
 			break;

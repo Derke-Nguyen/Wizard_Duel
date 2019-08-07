@@ -399,14 +399,6 @@
             }
         },
         {
-            "Key": "58d4946d-b917-4305-a4e1-80337a0ca4f3",
-            "Value": {
-                "id": "542eaa48-2fe3-42ef-bb1e-54299dfaf327",
-                "resourcePath": "scripts\\PlayerStateHitLag\\PlayerStateHitLag.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "5ab1e212-68ca-499a-ad50-d81b774c9138",
             "Value": {
                 "id": "c465aa74-139a-4529-85ec-27dee22e6797",
@@ -1128,7 +1120,6 @@
         "9f035423-ce43-42cc-afe7-83f439f7489c",
         "df411fe2-bc79-423e-8708-8a42d2bd94a0",
         "f0801ec3-86be-412f-8872-847502198211",
-        "58d4946d-b917-4305-a4e1-80337a0ca4f3",
         "51c120b0-da38-455a-aac6-ae0757352526",
         "5bebd17e-a89e-48fd-bacb-059368f0cca1",
         "4b1a68cf-e597-486f-b2a6-a53bd359d78a",

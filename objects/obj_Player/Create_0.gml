@@ -75,7 +75,6 @@ enum PLAYER_STATES{
 	weakprojectile,
 	strongprojectile,
 	selfcast,
-	hitlag,
 	hurtlag
 };
 

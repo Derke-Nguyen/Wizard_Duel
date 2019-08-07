@@ -11,6 +11,7 @@ if(spell1_key && (mp_current >= spell1_cost)){
 	var _shot = instance_create_layer(x,y, "EffectsTop", obj_SimpleProjectile);
 	_shot.origin = player_id;
 	_shot.hspeed *= image_xscale;
+	_shot.hkb *= image_xscale;
 	switch(color_current){
 		case COLOR.red:
 			_shot.image_index = 1;
