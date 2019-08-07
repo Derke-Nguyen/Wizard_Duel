@@ -1,7 +1,9 @@
 //All spell1's are basically the same
 if(spell1_key && (mp_current >= spell1_cost)){
+	mp_current -= spell1_cost;
 	weak_projectile_state_timer = 0;
 	strong_projectile_state_timer = 0;
+	hit_lag = weak_hit_lag;
 	StateSwitch(PLAYER_STATES.weakprojectile);
 	image_index = 0;
 	//audio_play_sound
@@ -25,10 +27,14 @@ if(spell1_key && (mp_current >= spell1_cost)){
 		default:
 			break;
 	};
-	mp_current -= spell1_cost;
+	//floaty
 }
 
 if(spell2_key  && (mp_current >= spell2_cost)){
+	mp_current -= spell2_cost;
+	weak_projectile_state_timer = 0;
+	strong_projectile_state_timer = 0;
+	
 	switch(color_current){
 		case COLOR.red:
 			Spell2_Red();
@@ -44,12 +50,15 @@ if(spell2_key  && (mp_current >= spell2_cost)){
 			break;
 		default:
 			break;
-};
-	mp_current -= spell2_cost;
+	};
 }
 
 
 if(spell3_key  && (mp_current >= spell3_cost)){
+	mp_current -= spell3_cost;
+	weak_projectile_state_timer = 0;
+	strong_projectile_state_timer = 0;
+	
 	switch(color_current){
 		case COLOR.red:
 			Spell3_Red();
@@ -65,6 +74,6 @@ if(spell3_key  && (mp_current >= spell3_cost)){
 			break;
 		default:
 			break;
-};
-	mp_current -= spell3_cost;
+	};
+	
 }

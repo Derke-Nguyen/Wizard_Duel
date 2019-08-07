@@ -36,15 +36,15 @@ spell3_cost = 30;
 
 weak_projectile_state_timer = 0;
 weak_projectile_state_frames = 5;
-weak_hit_lag = 5;
+weak_hit_lag = 3;
 
-strong_attack_state_timer = 0;
-strong_attack_state_frames = 10;
-strong_hit_lag = 3;
+strong_projectile_state_timer = 0;
+strong_projectile_state_frames = 10;
+strong_hit_lag = 8;
 
 self_cast_state_timer = 0;
 self_cast_state_frames = 3;
-self_cast_hit_lag = 3;
+self_cast_hit_lag = 1;
 
 hit_lag = 0;
 
