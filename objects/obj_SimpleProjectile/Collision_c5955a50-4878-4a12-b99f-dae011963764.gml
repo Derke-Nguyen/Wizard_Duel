@@ -7,9 +7,8 @@ with(other){
 		hkb = other.hkb * -image_xscale;
 		vkb = other.vkb;
 		hurt_lag = other.lag;
-	
 		StateSwitch(PLAYER_STATES.hurtlag);
-	
+		ScreenShake(other.shake,other.shake);
 		//hit effects maybe
 	}
 }

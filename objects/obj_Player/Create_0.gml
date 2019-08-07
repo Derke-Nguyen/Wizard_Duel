@@ -51,7 +51,7 @@ hit_lag = 0;
 //Misc
 
 invincible = 0;
-invincible_max = 120;
+invincible_max = 90;
 hurtlag = 0;
 knocked_back = false;
 
