@@ -9,8 +9,11 @@ Go here: [Link]
 **Contributers**
 
 Derek - Gameplay and Systems
+
 Siwei - Spells
+
 Aaron - Music and Prototype
+
 Richard - Art
 
 **License**
