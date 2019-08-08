@@ -13,7 +13,7 @@ sprite_index = SPRITE_PLAYER_IDLE;
 hspd = 0;
 vspd = 0;
 
-if(down_key && place_meeting(x,y+1, obj_OneWayPlatform)){
+if(down_key && place_meeting(x, y + 1, obj_OneWayPlatform)){
 	y++;
 	StateSwitch(PLAYER_STATES.air);
 }

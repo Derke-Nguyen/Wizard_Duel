@@ -7,7 +7,7 @@ objects_hit = ds_list_create();
 shake = 5;
 
 //knockback
-hkb = 15;
+hkb = 30;
 vkb = -10;
 
 hspeed = 20;

@@ -51,9 +51,14 @@ if (!right_key && !left_key || right_key && left_key) {
 	}
 }
 
+//buffered jump, double jump
 if(up_key){
-	//Buffered Jump / if add flashjump add if 
 	jump_buffer_timer = jump_buffer_timer_max;
+}
+
+//fastfall
+if(down_key){
+	vspd += GRAV;
 }
 
 //Horizontal

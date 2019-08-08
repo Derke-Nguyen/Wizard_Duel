@@ -13,5 +13,5 @@ if(other.player_id != origin && !other.invincible && other.state_current != PLAY
 		StateSwitch(PLAYER_STATES.hurtlag);
 		ScreenShake(other.shake,other.shake);
 	}
-	instance_destroy();
+	//instance_destroy();
 }

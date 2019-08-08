@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(!confirm){
+	image_alpha = 1;
 	if(keyboard_check_pressed(LEFT_KEY)){
 		left = true;
 	}
@@ -28,8 +29,6 @@ left = false;
 image_index = index-1;
 
 if(keyboard_check_pressed(CONFIRM_KEY)){
-	obj_CharacterSelectManager.confirmed++;
-	obj_CharacterSelectManager.player1type = index;
 	confirm = true;
 	image_alpha = 0.5;
 }

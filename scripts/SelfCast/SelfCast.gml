@@ -1,7 +1,7 @@
 sprite_index = SPRITE_PLAYER_SELF_CAST;
 
 hspd = 0;
-hspd = 0;
+vspd = 0;
 
 if(self_cast_state_timer == 0) {
 	//idk
