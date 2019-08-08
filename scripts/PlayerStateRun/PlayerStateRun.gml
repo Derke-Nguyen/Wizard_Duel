@@ -65,7 +65,7 @@ if (place_meeting(x + hspd, y, obj_Solid)) {
 x += hspd;
 
 // VERTICAL
-if (!PlatformBelow() && !place_meeting(x, y + 1, obj_Solid)) {
+if (!PlatformBelow() && (!place_meeting(x-2, y + 1, obj_Solid) || !place_meeting(x+2, y + 1, obj_Solid))) {
 	StateSwitch(PLAYER_STATES.air);
 }
 

@@ -1,15 +1,15 @@
 //Description: 
 
-#macro GRAV 0.9;
+#macro GRAV 0.8;
 
 buffs_to_draw = ds_list_create();
 
-resolution = "1080p";
+audio_play_sound(snd_BGM, 10, true);
 
 show_end_menu = false;
 end_menu_delay = 20;
 
-black_screen_start_alpha = 1;
+end_menu_alpha = 0;
 black_screen_start_speed = 0.05;
 
 audio_master_gain(0.5);
@@ -32,6 +32,7 @@ switch(GLOBAL_PLAYER_1_TYPE){
 	break;
 	default:
 		player1 = instance_create_layer(960, 540, "Player", obj_Player);
+		show_error("Error: Invalid Character", true);
 	break;
 };
 switch(GLOBAL_PLAYER_2_TYPE){
@@ -49,6 +50,7 @@ switch(GLOBAL_PLAYER_2_TYPE){
 	break;
 	default:
 		player2 = instance_create_layer(960, 540, "Player", obj_Player);
+		show_error("Error: Invalid Character", true);
 	break;
 };
 

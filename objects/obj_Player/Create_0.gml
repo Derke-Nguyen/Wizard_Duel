@@ -9,17 +9,17 @@ inputs[5] = ord("Y"); //spell2
 inputs[6] = ord("U"); //spell3
 
 // Movement
-ground_acceleration = 1.5;
-ground_deceleration = 3;
-run_speed = 10;
-air_acceleration = 2;
-air_deceleration = 1.2;
-air_speed = 8;
+ground_acceleration = 3;
+ground_deceleration = 6;
+run_speed = 12;
+air_acceleration = 3;
+air_deceleration = 6;
+air_speed = 9;
 jump_speed = 20;
 
 vspd = 0;
 hspd = 0;
-vterminal = 25;
+vterminal = 30;
 
 //Stats
 hp_max = 100;
