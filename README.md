@@ -2,16 +2,18 @@
 
 A small game made over the summer by a few friends. Runs on Windows and Max. It's essentially dodgeball with wizards.
 
-##Play
+**Play**
 
 Go here: [Link]
 
-##Contributers
+**Contributers**
+
 Derek - Gameplay and Systems
 Siwei - Spells
 Aaron - Music and Prototype
 Richard - Art
 
-##License
+**License**
+
 MIT License
 
