@@ -1,28 +1,31 @@
-if(resetbuffer <= 0){
+if(!player1_select.confirm && !player2_select.confirm){
 	if(keyboard_check_pressed(vk_escape)){
-		if(confirmed > 0){
-			player1_select.confirm = false;
-			player2_select.confirm = false;
-			confirmed = 0;
-			resetbuffer = 60;
-		}
-		else{
-			room_goto(MainMenu);
-		}
+		room_goto(MainMenu);
 	}
 }
 
-if(resetbuffer > 0){
-	--resetbuffer;
+if(keyboard_check_pressed(vk_escape)){
+	player1_select.confirm = false;
+	player2_select.confirm = false;
+	image_alpha = 0.5;
 }
 
-
-
-if(confirmed == 2){
-	image_alpha = 1;
-	GLOBAL_PLAYER_1_TYPE = player1_select.index;
-	GLOBAL_PLAYER_2_TYPE = player2_select.index;
-	if(player1.CONFIRM_KEY || player2.CONFIRM_KEY){
+if(player1_select.confirm && player2_select.confirm){
+	select_flicker--;
+	if(select_flicker < 30){	
+		image_alpha = 1;
+	}
+	else{
+		image_alpha = 0.5;
+	}
+	
+	if(select_flicker <= 0){
+		select_flicker = 60;
+	}
+	
+	if(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)){
+		GLOBAL_PLAYER_1_TYPE = player1_select.index;
+		GLOBAL_PLAYER_2_TYPE = player2_select.index;
 		room_goto(GameRoom);
 	}
 }

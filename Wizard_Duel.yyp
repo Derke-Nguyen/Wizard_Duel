@@ -871,14 +871,6 @@
             }
         },
         {
-            "Key": "bcaf8b3b-f672-4830-a523-57f2af235663",
-            "Value": {
-                "id": "c7557f73-2067-424e-ba0d-5c0ba487d358",
-                "resourcePath": "sprites\\sprite39\\sprite39.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "bcd76606-a6da-40b6-a366-09803c370546",
             "Value": {
                 "id": "71d0635a-da8f-4564-8969-3c460d58e08b",
@@ -946,7 +938,7 @@
             "Key": "cab17ee1-23ef-494b-98c8-c8450f77d888",
             "Value": {
                 "id": "f639c521-eab8-4ddc-9430-96f2dd6aef30",
-                "resourcePath": "fonts\\Roboto\\Roboto.yy",
+                "resourcePath": "fonts\\Pixel\\Pixel.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -980,6 +972,14 @@
                 "id": "8de8aa19-7654-4fd1-a30f-950d5d0ead6e",
                 "resourcePath": "views\\d148a1ee-d6f9-4aa1-b16d-8493bb351a1c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d51217ff-55ec-4669-8164-ae4be3f24c8b",
+            "Value": {
+                "id": "91f2c21d-b433-4871-aea5-8cd3ea019610",
+                "resourcePath": "sprites\\sTitleScreen\\sTitleScreen.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

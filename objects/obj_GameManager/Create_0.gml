@@ -6,6 +6,11 @@ buffs_to_draw = ds_list_create();
 
 audio_play_sound(snd_BGM, 10, true);
 
+//pause
+paused = false;
+
+
+//end screen
 show_end_menu = false;
 end_menu_delay = 20;
 

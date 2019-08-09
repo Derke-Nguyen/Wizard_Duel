@@ -5,7 +5,7 @@
 //Player 1
 player1 = argument0;
 
-var p1_x = random_range(190,1010);
+var p1_x = random_range(120,500);
 var p1_y = random_range(90, 890);
 
 argument0.x = p1_x;
@@ -21,10 +21,11 @@ argument1.inputs[4] = vk_numpad1; //spell1
 argument1.inputs[5] = vk_numpad2; //spell2
 argument1.inputs[6] = vk_numpad3; //spell3
 
-var p2_x = random_range(1010,1830);
+var p2_x = random_range(1500,1880);
 var p2_y = random_range(90, 890);
 
 argument1.x = p2_x;
 argument1.y = p2_y;
-argument0.player_id = 1;
+argument1.player_id = 1;
+
 
