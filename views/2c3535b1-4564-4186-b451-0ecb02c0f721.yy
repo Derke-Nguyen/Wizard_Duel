@@ -9,7 +9,8 @@
         "6752c1e1-0755-46d4-8b36-6b92ce960a12",
         "6846f0b5-8808-4e8a-a354-745800720125",
         "ec8eb30a-bbf1-4229-bc78-10f82db5a098",
-        "21537bf5-ca8c-4b00-8bc6-1d92c2f4d018"
+        "21537bf5-ca8c-4b00-8bc6-1d92c2f4d018",
+        "367042dc-12da-40ae-b6c4-5ac11c96e356"
     ],
     "filterType": "GMSprite",
     "folderName": "Red",
