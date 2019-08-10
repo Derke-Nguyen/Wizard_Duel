@@ -4,7 +4,7 @@
     "mvc": "1.12",
     "name": "sOneWayPlatform",
     "For3D": false,
-    "HTile": false,
+    "HTile": true,
     "VTile": false,
     "bbox_bottom": 1,
     "bbox_left": 0,
