@@ -14,6 +14,6 @@ draw_rectangle(x + 10, y + 10, x + (sprite_width - 10) * draw_health_ / player.h
 
 draw_set_color(colmp1);
 draw_rectangle(x + 10, y + 51 + 7, x + (sprite_width - 10) * draw_mana_ / player.mp_max, y + 92 - 7, false);
-draw_set_color(colmp2);
+//draw_set_color(colmp2);
 //draw_rectangle(x + 10, y + 51 + 7 + 13, x + (sprite_width - 10) * draw_mana_ / player.mp_max, y + 92 - 7, false);
-//draw_set_color(c_white);
+draw_set_color(c_white);
