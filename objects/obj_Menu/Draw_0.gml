@@ -1,16 +1,16 @@
-/// @description draw menu
+/// Description : draws the menu
 
-//SETS FONTS AND HOW TO ALLIGN THE TEXTS
+//sets font and alignment
 draw_set_font(menu_font);
 draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);
 
-//FOR EACH OPTION
+//Different colors
 if(menu_color_change > 30){
 	var _col = c_ltgray;
 }
 else{
-	var _col = c_gray;
+	var _col = c_black;
 }
 	
 var _y_position = menu_y - (menu_item_height);

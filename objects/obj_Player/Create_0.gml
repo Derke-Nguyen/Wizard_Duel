@@ -66,6 +66,7 @@ jump_buffer_timer = 0;
 jump_buffer_timer_max = 10;
 
 player_id = 0; //0 or 1
+same_type = false;
 
 // State machine
 enum PLAYER_STATES{
@@ -85,11 +86,12 @@ enum INPUTS{
 	spell3
 }
 
+//default spawn
 color_current = COLOR.none;
 state_current = PLAYER_STATES.air;
 state_timer = 0;
 
-//Sprites
+//Sprites, character specific
 SPRITE_PLAYER_IDLE = sPlayer;
 SPRITE_PLAYER_RUN = sPlayerRun;
 SPRITE_PLAYER_JUMP = sPlayerJump;

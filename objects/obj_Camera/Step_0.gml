@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+// shakes the camera if there is a screenshake in the shake_list
 
 // CAMERA SHAKE
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
@@ -17,6 +16,7 @@ for (var i = 0; i < ds_list_size(shake_list); i++) {
 	}
 }
 
+//actual shaking
 if (shake > 0) {
 	var ran_x = irandom_range(-shake, shake);
 	var ran_y = irandom_range(-shake, shake);

@@ -14,7 +14,7 @@ if(vspd > vterminal){
 	vspd -= GRAV;
 }
 
-//Move
+//Air Movement
 if(right_key){
 	image_xscale = 1;
 	if(hspd < air_speed){
@@ -35,6 +35,7 @@ if(left_key){
 	}
 }
 
+//no horizontal movement if both left/right is pressed or none pressed
 if (!right_key && !left_key || right_key && left_key) {
 	if (hspd >= air_deceleration) {
 		hspd -= air_deceleration;
@@ -51,7 +52,7 @@ if (!right_key && !left_key || right_key && left_key) {
 	}
 }
 
-//buffered jump, double jump
+//buffered jump
 if(up_key){
 	jump_buffer_timer = jump_buffer_timer_max;
 }
@@ -61,7 +62,7 @@ if(down_key){
 	vspd += GRAV;
 }
 
-//Horizontal
+//Horizontal check
 if(place_meeting(x + hspd, y, obj_Solid)){
 	while(!place_meeting(x+ sign(hspd), y, obj_Solid)){
 		x += sign(hspd);
@@ -71,7 +72,7 @@ if(place_meeting(x + hspd, y, obj_Solid)){
 
 x += hspd;
 
-//Vertical
+//Vertical check
 if(place_meeting(x,y+vspd, obj_Solid)){
 	while(!place_meeting(x, y + sign(vspd), obj_Solid)){
 		y+= sign(vspd);

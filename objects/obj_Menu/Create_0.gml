@@ -1,4 +1,4 @@
-// Description : creates the words and options "Start" and "Quit"
+// Description : Creates the start screen with a start option
 
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
@@ -17,4 +17,5 @@ menu_color_change = 60;
 //Options for Display
 prompt = "START GAME";
 
+//buffers so you can't double exit
 select_buffer = 20;

@@ -1,4 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+//destroys the screenshake to make clean up memory
 
 ds_list_destroy(shake_list);

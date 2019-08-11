@@ -3,8 +3,11 @@ if(state_timer == 1){
 }
 
 GetBufferedInput();
+
+//cancel all movement while hurt
 hspd = 0;
 vspd = 0;
+
 
 if(state_timer >= hurt_lag){
 	hspd = hkb;
@@ -15,5 +18,7 @@ if(state_timer >= hurt_lag){
 	invincible = invincible_max;
 	
 	knocked_back = true;
+	
+	//exit
 	StateSwitch(PLAYER_STATES.air);
 }

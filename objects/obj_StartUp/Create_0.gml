@@ -1,6 +1,6 @@
 // Description : Creates the Home Screen / Character Select
 
-//Defines the possible classes
+//Defines the possible wizard types
 enum COLOR{
 	none,
 	red,

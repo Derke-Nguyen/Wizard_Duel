@@ -13,11 +13,13 @@ sprite_index = SPRITE_PLAYER_IDLE;
 hspd = 0;
 vspd = 0;
 
+//drop down
 if(down_key && place_meeting(x, y + 1, obj_OneWayPlatform)){
 	y++;
 	StateSwitch(PLAYER_STATES.air);
 }
 
+//left or right movement
 if(right_key){
 	if(!place_meeting(x + 1, y, obj_Solid)){
 		StateSwitch(PLAYER_STATES.run);
@@ -30,6 +32,7 @@ if(left_key){
 	}
 }
 
+//jump
 if(up_key){
 	vspd = -jump_speed;
 	//audio_play_sound(snd_PlayerJump, 1, false);

@@ -1,7 +1,8 @@
-if(player_creator != other.player_id){
-	other.hp_current -= 20;
+if(other.player_id != player_creator && !other.invincible && other.state_current != PLAYER_STATES.hurtlag){
+	PlayerHit(other, damage, 5, hkb, vkb, lag);
+	
 }
-else{
+else if(other.player_id == player_creator){
 	other.y = y;
 	other.x = x;
 	if(image_xscale < 0){

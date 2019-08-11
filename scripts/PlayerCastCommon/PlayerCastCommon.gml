@@ -1,6 +1,7 @@
-//Moving
+//Description : PlayerCastCommon() - a common effect in all spells such as freezing in air and stuff
+
+//if casting in the air
 if(!place_meeting(x, y + 1, obj_Solid) && !PlatformBelow()){
-	//Can move in air while casting
 		
 	//Gravity
 	if(vspd <= vterminal){
@@ -10,7 +11,7 @@ if(!place_meeting(x, y + 1, obj_Solid) && !PlatformBelow()){
 		vspd -= GRAV;
 	}
 	
-	//Move
+	//right
 	if(right_key){
 		if(hspd < air_speed){
 			hspd += air_acceleration;
@@ -20,6 +21,7 @@ if(!place_meeting(x, y + 1, obj_Solid) && !PlatformBelow()){
 		}
 	}
 	
+	//left
 	if(left_key){
 		if(hspd > -air_speed){
 			hspd -= air_acceleration;
@@ -29,6 +31,7 @@ if(!place_meeting(x, y + 1, obj_Solid) && !PlatformBelow()){
 		}
 	}
 	
+	//both or neither is pressed, no horizontal movement
 	if(!right_key && !left_key || right_key && left_key){
 		if(hspd >= air_deceleration){
 			hspd -= air_deceleration;
@@ -63,7 +66,6 @@ else{
 }
 
 //Horizontal
-
 if(place_meeting(x+hspd, y, obj_Solid)){
 	while(!place_meeting(x+ sign(hspd), y, obj_Solid)){
 		x += sign(hspd);

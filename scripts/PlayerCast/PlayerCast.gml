@@ -1,5 +1,7 @@
-//All spell1's are basically the same
+// Description : PlayerCast() - Checks which keys are pressed and casts spells if possible
+//All spell1's are the same
 if(spell1_key && (mp_current >= spell1_cost)){
+	//Main effects in all spells, remove mana, reset state timers, set cast lag, switch states
 	mp_current -= spell1_cost;
 	weak_projectile_state_timer = 0;
 	strong_projectile_state_timer = 0;
@@ -8,10 +10,14 @@ if(spell1_key && (mp_current >= spell1_cost)){
 	image_index = 0;
 	//audio_play_sound
 	//audio_sound_pitch
+	
+	//actual spell creation
 	var _shot = instance_create_layer(x,y, "EffectsTop", obj_SimpleProjectile);
 	_shot.origin = player_id;
 	_shot.hspeed *= image_xscale;
 	_shot.hkb *= image_xscale;
+	
+	//change spell sprite based on character type
 	switch(color_current){
 		case COLOR.red:
 			_shot.image_index = 1;
@@ -28,7 +34,6 @@ if(spell1_key && (mp_current >= spell1_cost)){
 		default:
 			break;
 	};
-	//floaty
 }
 
 if(spell2_key  && (mp_current >= spell2_cost)){

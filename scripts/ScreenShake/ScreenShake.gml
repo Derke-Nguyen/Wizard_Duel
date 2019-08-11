@@ -1,4 +1,4 @@
-/// @description ScreenShake() - adds a shake to the buffer
+/// @description ScreenShake() - adds a screenshake to the buffer
 
 var _new_shake;
 _new_shake[0] = argument[0]; //magnitude

@@ -1,3 +1,5 @@
+//Description : GetBufferedInput() - sees if there is an buffered inputs and then uses it
+
 if (up_key) {
 	buffered_input = INPUTS.jump;
 }

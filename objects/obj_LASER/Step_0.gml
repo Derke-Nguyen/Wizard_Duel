@@ -15,3 +15,6 @@ else{
 if(image_index >= 56){
 	instance_destroy(self, false);
 }
+
+ScreenShake(shake, shake);
+

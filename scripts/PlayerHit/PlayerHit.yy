@@ -1,8 +1,8 @@
 {
-    "id": "ca35b93d-60a7-4e4a-bc2b-05c0d5bd5d1d",
+    "id": "85792a8d-1628-4590-b75f-dc3ea0ea68f8",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "GetPlayerDamage",
+    "name": "PlayerHit",
     "IsCompatibility": false,
     "IsDnD": false
 }

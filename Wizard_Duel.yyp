@@ -255,14 +255,6 @@
             }
         },
         {
-            "Key": "2d299288-d461-4f2c-90e4-a331c760bda7",
-            "Value": {
-                "id": "c542689e-8dce-47d7-b288-c5142a20beeb",
-                "resourcePath": "objects\\obj_Status2\\obj_Status2.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2e417277-4895-4463-a712-7fa4a5d5f5bd",
             "Value": {
                 "id": "17b834d0-fbb8-4ff0-9363-0c46626e850b",
@@ -719,6 +711,14 @@
             }
         },
         {
+            "Key": "85792a8d-1628-4590-b75f-dc3ea0ea68f8",
+            "Value": {
+                "id": "e7bda813-c227-4bb8-b8f5-66e18412b23b",
+                "resourcePath": "scripts\\PlayerHit\\PlayerHit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "863481ff-700e-4972-9445-1d7e3a0133d2",
             "Value": {
                 "id": "d6474600-4c19-459d-8047-ec0e90dc07ef",
@@ -764,14 +764,6 @@
                 "id": "4c31d6f0-77bd-4bc2-8766-495cba2b66df",
                 "resourcePath": "views\\98b0a982-ee70-4d6f-b07f-65cd9920209b.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "9901dad8-baba-458a-8217-e28b7192d154",
-            "Value": {
-                "id": "ec45bc0e-2663-4900-8a94-81e0e5284b78",
-                "resourcePath": "objects\\obj_CharacterSelect2\\obj_CharacterSelect2.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -988,14 +980,6 @@
                 "id": "b331ab15-de26-4c8b-945a-d37de080061d",
                 "resourcePath": "views\\c306e887-cd95-42d6-968d-2700b8c0a75f.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "ca35b93d-60a7-4e4a-bc2b-05c0d5bd5d1d",
-            "Value": {
-                "id": "86a3d603-5c94-4da7-bdfb-4dd5916a0154",
-                "resourcePath": "scripts\\GetPlayerDamage\\GetPlayerDamage.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1221,6 +1205,14 @@
                 "resourcePath": "sprites\\sPlayerRun\\sPlayerRun.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "ff953a6e-f43f-406d-bd25-f1c628b8966d",
+            "Value": {
+                "id": "91399122-fec6-43bf-babf-f81bb74eb2bb",
+                "resourcePath": "shaders\\shSameCharacter\\shSameCharacter.yy",
+                "resourceType": "GMShader"
+            }
         }
     ],
     "script_order": [
@@ -1249,9 +1241,9 @@
         "6664816d-a9a4-4538-b86d-19ddc4adf753",
         "3af6a74c-2b34-4f73-ac5a-daaa5fbd8139",
         "43d92f33-ebb6-4a69-a757-b2fd2602b632",
+        "85792a8d-1628-4590-b75f-dc3ea0ea68f8",
         "78d4ad82-1ea5-4b43-b34b-647b9b1ff210",
         "a3fa9cb2-76e2-43a0-ab28-da6414acc11c",
-        "ca35b93d-60a7-4e4a-bc2b-05c0d5bd5d1d",
         "2285359b-8dbf-4f35-a75e-539ee4619e8e"
     ],
     "tutorial": ""

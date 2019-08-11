@@ -1,4 +1,4 @@
-//Description: 
+// Description : Sets up the game once the room loads
 
 #macro GRAV 0.8;
 
@@ -60,3 +60,9 @@ switch(GLOBAL_PLAYER_2_TYPE){
 };
 
 SetPlayers(player1, player2);
+
+var _player1_bar = instance_create_layer(200, 980, "Player", obj_Status);
+_player1_bar.player = player1;
+
+var _player2_bar = instance_create_layer(1532, 980, "Player", obj_Status);
+_player2_bar.player = player2;

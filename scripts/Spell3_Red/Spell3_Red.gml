@@ -10,7 +10,8 @@ if(image_xscale > 0){
 else{
 	inst.facing = 1;
 }
-	
+
+inst.hkb *= image_xscale;
 inst.player_creator = player_id;
 
 StateSwitch(PLAYER_STATES.strongprojectile);

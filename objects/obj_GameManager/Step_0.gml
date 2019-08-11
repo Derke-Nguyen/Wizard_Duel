@@ -14,7 +14,7 @@ if(!paused){
 	//puts back into character select
 	if(show_end_menu){
 		end_menu_alpha += 0.02;
-		if(keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)){
+		if(keyboard_check_pressed(vk_anykey)){
 			audio_stop_all();
 			room_goto(CharacterSelect);
 		}
@@ -26,6 +26,7 @@ if(!paused){
 else{
 	if(keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)){
 		paused = false;
+		audio_resume_all();
 	}
 	if(keyboard_check_pressed(vk_escape)){
 		audio_stop_all();
@@ -38,4 +39,5 @@ if(keyboard_check_pressed(vk_escape) && !paused && !show_end_menu){
 		image_index = 3;
 		image_alpha = 1;
 		paused = true;
+		audio_pause_all();
 }

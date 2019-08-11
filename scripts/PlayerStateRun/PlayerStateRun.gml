@@ -16,7 +16,7 @@ if(image_index == round(image_index)){
 
 sprite_index = SPRITE_PLAYER_RUN;
 
-//Run
+//right
 if (right_key) {
 	image_xscale = 1;
 	if (hspd < run_speed) {
@@ -27,6 +27,7 @@ if (right_key) {
 	}
 } 
 
+//left
 if (left_key) {
 	image_xscale = -1;
 	if (hspd > -run_speed) {
@@ -69,15 +70,18 @@ if (!PlatformBelow() && (!place_meeting(x-2, y + 1, obj_Solid) || !place_meeting
 	StateSwitch(PLAYER_STATES.air);
 }
 
+//if not moving switch to idle
 if (hspd = 0) {
 	StateSwitch(PLAYER_STATES.idle);
 }
 
+//drop down
 if(down_key && place_meeting(x,y +1, obj_OneWayPlatform)){
 	y++;
 	StateSwitch(PLAYER_STATES.air);
 }
 
+//jump
 if (up_key) {
 	vspd = -jump_speed;
 	//audio_play_sound(sndPlayerJump, 1, false);
