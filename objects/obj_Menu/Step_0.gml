@@ -6,6 +6,9 @@ if(select_buffer <= 0){
 	if(keyboard_check_pressed(vk_escape) || keyboard_check_pressed(vk_end)){
 		game_end();
 	}
+	else if(keyboard_check_pressed(vk_tab)){
+		//nothing
+	}
 	else if(keyboard_check_pressed(vk_anykey)){
 		room_goto(CharacterSelect);
 	}

@@ -18,5 +18,6 @@ GLOBAL_PLAYER_2_TYPE = COLOR.none
 
 //Sets resolution and makes the game fullscreen
 resolution = "1080p";
+resolution_number_index = 2;
 
 window_set_fullscreen(true);

@@ -1,3 +1,5 @@
+//Description : Sets up all the inital data in the player obj
+
 //Inputs
 inputs[0] = ord("D"); //right
 inputs[1] = ord("A"); //left

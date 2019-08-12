@@ -8,14 +8,16 @@ audio_play_sound(snd_BGM, 10, true);
 
 //pause
 paused = false;
-
+screenShot = -1;
+pause_col_change = 60;
 
 //end screen
 show_end_menu = false;
-end_menu_delay = 20;
-
-end_menu_alpha = 0;
-black_screen_start_speed = 0.05;
+end_menu_x = display_get_height();
+end_menu_y = (display_get_gui_height() / 4) - 100;
+menu_font = Pixel;
+menu_col = c_white;
+victor = "nobody";
 
 audio_master_gain(0.5);
 
