@@ -25,16 +25,10 @@ else{
 	instance_deactivate_all(1);
 	if(keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)){
 		paused = false;
-		if(sprite_exists(screenShot)){
-			sprite_delete(screenShot);
-		}
 		instance_activate_all();
 		audio_resume_all();
 	}
 	if(keyboard_check_pressed(vk_escape)){
-		if(sprite_exists(screenShot)){
-			sprite_delete(screenShot);
-		}
 		audio_stop_all();
 		room_goto(MainMenu);
 	}
@@ -43,8 +37,5 @@ else{
 //pause menu
 if(keyboard_check_pressed(vk_escape) && !paused && !show_end_menu){
 		paused = true;
-		if(!sprite_exists(screenShot)){
-			screenShot = sprite_create_from_surface(application_surface, 0, 0, room_width, room_height, 0, 0, 0, 0);
-		}
 		audio_pause_all();
 }

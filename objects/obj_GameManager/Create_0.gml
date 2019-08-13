@@ -8,7 +8,6 @@ audio_play_sound(snd_BGM, 10, true);
 
 //pause
 paused = false;
-screenShot = -1;
 pause_col_change = 60;
 
 //end screen
