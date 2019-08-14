@@ -62,6 +62,7 @@ switch(GLOBAL_PLAYER_2_TYPE){
 
 SetPlayers(player1, player2);
 
+//creates health bars
 var _player1_bar = instance_create_layer(200, 980, "Player", obj_Status);
 _player1_bar.player = player1;
 

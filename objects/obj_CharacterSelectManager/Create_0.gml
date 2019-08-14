@@ -4,8 +4,8 @@ image_alpha = 0.5;
 
 select_flicker = 60;
 
-player1_select = instance_create_layer(480, 320, "Instances", obj_CharacterSelect);
-player2_select = instance_create_layer(1376, 320, "Instances", obj_CharacterSelect);
+player1_select = instance_create_layer(480, 220, "Instances", obj_CharacterSelect);
+player2_select = instance_create_layer(1440, 220, "Instances", obj_CharacterSelect);
 
 //sets player 2 select controls
 player2_select.LEFT_KEY = vk_left;

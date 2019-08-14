@@ -6,9 +6,9 @@ inputs[1] = ord("A"); //left
 inputs[2] = ord("W"); //up
 inputs[3] = ord("S"); //down
 
-inputs[4] = ord("T"); //spell1
-inputs[5] = ord("Y"); //spell2
-inputs[6] = ord("U"); //spell3
+inputs[4] = ord("R"); //spell1
+inputs[5] = ord("T"); //spell2
+inputs[6] = ord("Y"); //spell3
 
 // Movement
 ground_acceleration = 3;

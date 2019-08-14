@@ -22,6 +22,7 @@ var p2_x = random_range(1500,1880);
 var p2_y = random_range(90, 890);
 argument1.x = p2_x;
 argument1.y = p2_y;
+argument1.image_xscale *= -1;
 argument1.player_id = 1;
 
 //if the two players are the same type, change the color of the second player

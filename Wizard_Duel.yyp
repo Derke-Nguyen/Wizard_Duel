@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "2fd2ee3a-6a2f-4477-9d25-392e39f73956",
+            "Value": {
+                "id": "584705fa-4ec2-4c30-bf4d-294674f8789c",
+                "resourcePath": "sprites\\sCommands1\\sCommands1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "301d4e8b-d153-4bc0-a236-fadf65476903",
             "Value": {
                 "id": "a5687ced-930c-49cc-8376-63ae15597e13",
@@ -1035,6 +1043,14 @@
             "Value": {
                 "id": "91f2c21d-b433-4871-aea5-8cd3ea019610",
                 "resourcePath": "sprites\\sTitleScreen\\sTitleScreen.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d549b173-e7c9-4806-9d91-da2238eaf73a",
+            "Value": {
+                "id": "1d5f59dd-1f7c-4366-ba8f-87c7c6fe78a8",
+                "resourcePath": "sprites\\sCommands2\\sCommands2.yy",
                 "resourceType": "GMSprite"
             }
         },
