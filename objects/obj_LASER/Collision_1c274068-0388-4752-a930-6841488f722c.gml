@@ -1,5 +1,5 @@
 if(other.player_id != player_creator && !other.invincible && other.state_current != PLAYER_STATES.hurtlag){
-	PlayerHit(other, damage, 5, hkb, vkb, lag);
+	PlayerHit(other, damage, 15, hkb, vkb, lag);
 	
 }
 else if(other.player_id == player_creator){

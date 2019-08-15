@@ -9,7 +9,8 @@
         "efc8c9f8-0832-4da4-9d73-ffa01afb24ac",
         "02380644-2fba-4834-9a9f-defe12901429",
         "5ad6e766-0688-424f-bafb-1186d6967f5c",
-        "5d376695-51b9-44ce-ac23-1a25c07fc8a8"
+        "5d376695-51b9-44ce-ac23-1a25c07fc8a8",
+        "c062f454-d7d9-4b13-b7a4-e33e987f0dac"
     ],
     "filterType": "GMSprite",
     "folderName": "Blue",
