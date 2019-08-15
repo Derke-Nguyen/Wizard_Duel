@@ -5,6 +5,7 @@ if(spell1_key && (mp_current >= spell1_cost)){
 	mp_current -= spell1_cost;
 	weak_projectile_state_timer = 0;
 	strong_projectile_state_timer = 0;
+	self_cast_state_timer = 0;
 	hit_lag = weak_hit_lag;
 	StateSwitch(PLAYER_STATES.weakprojectile);
 	image_index = 0;
@@ -40,6 +41,7 @@ if(spell2_key  && (mp_current >= spell2_cost)){
 	mp_current -= spell2_cost;
 	weak_projectile_state_timer = 0;
 	strong_projectile_state_timer = 0;
+	self_cast_state_timer = 0;
 	
 	switch(color_current){
 		case COLOR.red:
@@ -64,6 +66,7 @@ if(spell3_key  && (mp_current >= spell3_cost)){
 	mp_current -= spell3_cost;
 	weak_projectile_state_timer = 0;
 	strong_projectile_state_timer = 0;
+	self_cast_state_timer = 0;
 	
 	switch(color_current){
 		case COLOR.red:
