@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "012691dc-d027-470c-8974-79b459026df1",
+            "Value": {
+                "id": "e83097eb-2c56-4bdf-af1e-93661f810628",
+                "resourcePath": "objects\\obj_invincibility\\obj_invincibility.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "02380644-2fba-4834-9a9f-defe12901429",
             "Value": {
                 "id": "e46fd613-0ede-4797-9057-7d9b0317ef9f",
@@ -916,6 +924,14 @@
                 "id": "5209419d-5e01-465a-9b94-cf536fa291ef",
                 "resourcePath": "views\\b20fcd33-c275-42ce-93ad-55b274e77ab5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b5c2e901-4fac-49a0-9e79-f79da0e7b89d",
+            "Value": {
+                "id": "387e6ca5-7b92-424e-b14c-fcb819f7a5a6",
+                "resourcePath": "sprites\\spr_invincibility\\spr_invincibility.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

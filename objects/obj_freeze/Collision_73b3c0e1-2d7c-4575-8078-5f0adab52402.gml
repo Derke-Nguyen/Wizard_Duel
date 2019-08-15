@@ -1,16 +1,21 @@
-if(other.player_id != player_creator && image_index == 1){
+if(other.player_id != player_creator && !other.invincible && other.state_current != PLAYER_STATES.hurtlag && !damaged){
 	image_index++;
 	speed = 0;
-	current_x = x;
-	current_y = y;
+	current_x= other.x;
+	current_y = other.y;
+	x = other.x;
+	y = other.y;
+	PlayerHit(other, damage, shake, hkb, vkb, lag);
+	damaged = true;
+	current_xscale = other.image_xscale;
 }
-if(other.player_id != player_creator && image_index == 2){
+if(image_index == 1){
 	other.x = current_x;
 	other.y = current_y;
-}
-if(image_index == 2){
-	--time;
-}
-if(time <= 0){
-	instance_destroy();
+	if(current_xscale > 0){
+		other.image_xscale = 1;
+	}
+	else{
+		other.image_xscale = -1;
+	}
 }
