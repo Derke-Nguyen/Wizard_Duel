@@ -14,3 +14,5 @@ SPRITE_PLAYER_WEAK_PROJECTILE = sPlayerWeakProjectileBlue;
 SPRITE_PLAYER_STRONG_PROJECTILE = sPlayerStrongProjectileBlue;
 SPRITE_PLAYER_SELF_CAST = sPlayerSelfCastBlue;
 
+//spell specific
+ult = false;
