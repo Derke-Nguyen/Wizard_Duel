@@ -21,7 +21,7 @@ if(paused){
 		var _col = c_black;
 	}
 	draw_set_color(_col);
-	draw_text(view_wport[0] * 0.5, view_hport[0] * 0.3, "PAUSED");
+	draw_text(end_menu_x, end_menu_y, "PAUSED");
 	if(pause_col_change < 0){
 		pause_col_change = 60;
 	}

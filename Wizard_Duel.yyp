@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "30deb4e5-e47a-4b52-b462-7cd00ee9e98d",
+            "Value": {
+                "id": "0d52c230-95aa-47f0-9f5f-ab08c9ecc1b0",
+                "resourcePath": "shaders\\shFrozen\\shFrozen.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "322d2230-6e18-4f40-82c1-ec60fdb221f0",
             "Value": {
                 "id": "8a204579-f9b8-463b-a568-93cdfa9b16bf",

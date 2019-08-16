@@ -12,8 +12,8 @@ pause_col_change = 60;
 
 //end screen
 show_end_menu = false;
-end_menu_x = display_get_height();
-end_menu_y = (display_get_gui_height() / 4) - 100;
+end_menu_x = view_wport[0] * 0.5;
+end_menu_y = view_hport[0] * 0.3;
 menu_font = Pixel;
 menu_col = c_white;
 victor = "nobody";
