@@ -8,5 +8,6 @@ if(distance > 0){
 }
 --distance;
 if(distance == 0){
+	obj_Player.run_speed = 12;
 	instance_destroy();
 }
