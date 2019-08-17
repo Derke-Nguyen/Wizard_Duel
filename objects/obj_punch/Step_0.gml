@@ -8,6 +8,8 @@ if(distance > 0){
 }
 --distance;
 if(distance == 0){
-	obj_Player.run_speed = 12;
+	if(obj_Player.player_id == player_creator){
+		obj_Player.run_speed = 12;
+	}
 	instance_destroy();
 }
