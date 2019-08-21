@@ -26,6 +26,10 @@ if(object_index == obj_Player || object_index == obj_Red || object_index == obj_
 		case PLAYER_STATES.selfcast:
 			SelfCast();
 			break;
+			
+		case PLAYER_STATES.mobility:
+			Mobility();
+			break;
 		
 		case PLAYER_STATES.hurtlag:
 			PlayerStateHurtLag();

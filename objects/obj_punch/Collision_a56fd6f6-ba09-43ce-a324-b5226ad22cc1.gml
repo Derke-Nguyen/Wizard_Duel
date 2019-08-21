@@ -1,3 +1,11 @@
+if(player_creator == other.player_id && player_reference == 0){
+	player_reference = other;
+}
+
+with(player_reference){
+			StateSwitch(PLAYER_STATES.air);
+}
+
 if(player_creator == other.player_id){
 	other.x = x;
 	other.run_speed = 0;

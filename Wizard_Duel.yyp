@@ -1127,6 +1127,14 @@
             }
         },
         {
+            "Key": "cdfde2df-b7ad-4760-8663-e36cef215cb0",
+            "Value": {
+                "id": "f393e4b9-d8ae-4da8-a40b-048e944225a6",
+                "resourcePath": "scripts\\Mobility\\Mobility.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cfd14ea9-26a1-4dea-a2f5-0f3a902dc150",
             "Value": {
                 "id": "537964f5-f5ef-4a0c-8887-16aad720050c",
@@ -1373,6 +1381,7 @@
         "4b1a68cf-e597-486f-b2a6-a53bd359d78a",
         "c1081a05-af2d-4c82-84a4-f1c598ce8a16",
         "47a8cdf6-733a-46a6-83b0-e0b8e8068db2",
+        "cdfde2df-b7ad-4760-8663-e36cef215cb0",
         "37748855-360b-4426-8143-11d194cdbfbc",
         "453ea0dc-9ebe-4aff-8847-dd19748f3d5f",
         "bb75b962-36d6-4054-b941-43da7bc1eb40",
