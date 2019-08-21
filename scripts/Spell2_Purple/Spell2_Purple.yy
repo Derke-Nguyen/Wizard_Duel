@@ -1,5 +1,5 @@
 {
-    "id": "0fc10a07-c58c-4734-8602-bf69dd21c8eb",
+    "id": "3957bab6-239a-49ef-8922-a54929861e7c",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "Spell2_Purple",
