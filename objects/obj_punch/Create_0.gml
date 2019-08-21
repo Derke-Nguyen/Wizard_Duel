@@ -2,6 +2,7 @@ player_creator = 0;
 distance = 0;
 hit = false;
 directionOf = 0;
+player_reference = 0;
 
 
 

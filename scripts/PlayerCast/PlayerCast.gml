@@ -54,7 +54,7 @@ if(spell2_key  && (mp_current >= spell2_cost)){
 			Spell2_Orange();
 			break;
 		case COLOR.purple:
-			Spell3_Purple();
+			Spell2_Purple();
 			break;
 		default:
 			break;
