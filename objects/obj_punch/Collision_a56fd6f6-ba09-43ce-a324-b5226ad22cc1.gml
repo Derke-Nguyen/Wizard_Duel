@@ -11,8 +11,13 @@ if(player_creator == other.player_id){
 		other.run_speed = 12;
 		instance_destroy();
 	}
+	if(distance == 0){
+		other.run_speed = 12;
+	instance_destroy();
+	}
 }
 if(player_creator != other.player_id && !other.invincible){
 	PlayerHit(other, damage, shake, hkb, vkb, lag);
 	hit = true;
 }
+
