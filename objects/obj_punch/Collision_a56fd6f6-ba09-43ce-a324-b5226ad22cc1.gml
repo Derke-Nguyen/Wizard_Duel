@@ -1,30 +1,29 @@
-if(player_creator == other.player_id && player_reference == 0){
+if(player_creator == other.player_id){
 	player_reference = other;
 }
 
 with(player_reference){
+	x = other.x;
+	other.y = y;
+	image_xscale = other.image_xscale;
+	run_speed = 0;
+	if(other.hit){
+		hp_current += 5;
+		if(hp_current > hp_max){
+			hp_current = hp_max;
+		}
+		run_speed = 12;
+		if (place_meeting(x, y + 1, obj_Solid)) {
 			StateSwitch(PLAYER_STATES.air);
+		} else {
+			StateSwitch(PLAYER_STATES.air);
+		}
+		with(other)
+			instance_destroy();
+	}
 }
 
-if(player_creator == other.player_id){
-	other.x = x;
-	other.run_speed = 0;
-	other.image_xscale = image_xscale;
-	y = other.y;
-	if(hit){
-		other.hp_current += 5;
-		if(other.hp_current > other.hp_max){
-			other.hp_current = other.hp_max;
-		}
-		other.run_speed = 12;
-		instance_destroy();
-	}
-	if(distance == 0){
-		other.run_speed = 12;
-	instance_destroy();
-	}
-}
-if(player_creator != other.player_id && !other.invincible){
+if(player_creator != other.player_id && !other.invincible && other.state_current != PLAYER_STATES.hurtlag){
 	PlayerHit(other, damage, shake, hkb, vkb, lag);
 	hit = true;
 }

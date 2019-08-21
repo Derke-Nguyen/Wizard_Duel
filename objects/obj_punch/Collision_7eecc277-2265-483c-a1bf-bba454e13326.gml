@@ -1,9 +1,10 @@
-if(obj_Player.player_id == player_creator){
-	obj_Player.run_speed = 12;
-}
-
 with(player_reference){
-	StateSwitch(PLAYER_STATES.air);
+	run_speed = 12;
+	if (place_meeting(x, y + 1, obj_Solid)) {
+		StateSwitch(PLAYER_STATES.idle);
+	} else {
+		StateSwitch(PLAYER_STATES.air);
+	}
 }
 
 instance_destroy();

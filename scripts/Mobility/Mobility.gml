@@ -1,6 +1,5 @@
 sprite_index = SPRITE_PLAYER_SELF_CAST;
 
-
 //freeze position
 hspd = 0;
 vspd = 0;
