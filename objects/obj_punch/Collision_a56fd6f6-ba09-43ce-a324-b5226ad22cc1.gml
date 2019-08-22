@@ -4,7 +4,7 @@ if(player_creator == other.player_id){
 
 with(player_reference){
 	x = other.x;
-	other.y = y;
+	y = other.y;
 	image_xscale = other.image_xscale;
 	run_speed = 0;
 	if(other.hit){

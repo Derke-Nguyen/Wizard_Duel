@@ -863,6 +863,14 @@
             }
         },
         {
+            "Key": "9add174a-bdbb-4d23-9ee1-a1c4867c3797",
+            "Value": {
+                "id": "1f162422-9958-4842-914c-55a5f5ed0ccd",
+                "resourcePath": "sprites\\spr_tp_point\\spr_tp_point.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9e091e7d-22dd-4e71-ac00-96eccf47dbe4",
             "Value": {
                 "id": "d7dd116e-e4e5-4a61-983a-5ba238bafc3a",
