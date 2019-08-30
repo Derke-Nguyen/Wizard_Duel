@@ -1,4 +1,4 @@
-hit_lag = strong_hit_lag;
+hit_lag = weak_hit_lag;
 	
 //Spell effects
 var inst = instance_create_depth(x, y, 0, obj_freeze);
@@ -11,4 +11,4 @@ else{
 	inst.speed = -7;
 }
 
-StateSwitch(PLAYER_STATES.strongprojectile);
+StateSwitch(PLAYER_STATES.weakprojectile);
