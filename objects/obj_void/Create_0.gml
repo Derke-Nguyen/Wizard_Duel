@@ -4,8 +4,8 @@ time = 10;
 damage = 10;
 
 //knockback
-hkb = 0;
-vkb = 0;
+hkb = 30;
+vkb = -15;
 
 lag = 0;
 
