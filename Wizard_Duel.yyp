@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "05c9f7e3-1dcf-4ab7-b4e7-6d3d4a1c88b9",
+            "Value": {
+                "id": "628c55d4-59ce-4fd6-9241-e21fc6cd432a",
+                "resourcePath": "objects\\obj_consecutive_punches\\obj_consecutive_punches.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "06ae7916-9be9-4242-9e41-4fc716828159",
             "Value": {
                 "id": "c1717c3f-29b6-4896-97b1-a655ece3735c",
@@ -647,6 +655,14 @@
             }
         },
         {
+            "Key": "6a727599-e346-446f-89c2-694e7b96e38d",
+            "Value": {
+                "id": "b42eec48-01d6-42eb-8245-ab5e8c0f2297",
+                "resourcePath": "objects\\obj_p1_count\\obj_p1_count.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6d48b1c6-2cc7-471d-85ea-7de2674539dc",
             "Value": {
                 "id": "aad22432-563d-425e-8014-cffba9ddd24f",
@@ -751,6 +767,14 @@
             }
         },
         {
+            "Key": "7e0b8d93-82b9-45dd-a365-e111dc5141d5",
+            "Value": {
+                "id": "6dcb9c44-593d-4cb0-9735-0e19e0869bfd",
+                "resourcePath": "objects\\obj_p2_count\\obj_p2_count.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7fe0561e-0424-47d0-b830-ff9f5e3e70f8",
             "Value": {
                 "id": "f3cec9bd-1b93-4e35-a89f-edbf818207a7",
@@ -787,6 +811,14 @@
             "Value": {
                 "id": "9642cd24-e284-4df4-95ee-67cc8032add7",
                 "resourcePath": "sprites\\sPlayerStrongProjectile\\sPlayerStrongProjectile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8cfa62c4-f1b8-4d7f-bd95-583c8e973510",
+            "Value": {
+                "id": "019db680-3559-4b01-8566-5cc4e0e25c47",
+                "resourcePath": "sprites\\spr_consecutive_punches\\spr_consecutive_punches.yy",
                 "resourceType": "GMSprite"
             }
         },
