@@ -25,3 +25,5 @@ if(hp_current <= 0){
 	StateSwitch(PLAYER_STATES.hurtlag);
 	instance_destroy();
 }
+
+x = clamp(x, 125, 1885);

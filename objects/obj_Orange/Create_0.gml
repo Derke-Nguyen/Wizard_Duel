@@ -13,4 +13,3 @@ SPRITE_PLAYER_JUMP = sPlayerJumpOrange;
 SPRITE_PLAYER_WEAK_PROJECTILE = sPlayerWeakProjectileOrange;
 SPRITE_PLAYER_STRONG_PROJECTILE = sPlayerStrongProjectileOrange;
 SPRITE_PLAYER_SELF_CAST = sPlayerSelfCastOrange;
-

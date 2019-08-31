@@ -32,6 +32,7 @@ switch(GLOBAL_PLAYER_1_TYPE){
 	break;
 	case COLOR.orange:
 		player1 = instance_create_layer(960, 540, "Player", obj_Orange);
+		instance_create_depth(0, 0, 0, obj_p2_count);
 	break;
 	case COLOR.purple:
 		player1 = instance_create_layer(960, 540, "Player", obj_Purple);
@@ -50,6 +51,7 @@ switch(GLOBAL_PLAYER_2_TYPE){
 	break;
 	case COLOR.orange:
 		player2 = instance_create_layer(960, 540, "Player", obj_Orange);
+		instance_create_depth(0, 0, 0, obj_p1_count);
 	break;
 	case COLOR.purple:
 		player2 = instance_create_layer(960, 540, "Player", obj_Purple);
